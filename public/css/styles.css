@@ -6,3 +6,97 @@ body{
   margin:0;
   font-family:"sans-serif";
 }
+
+@font-face{
+  font-family:icomoon;
+  src:url(../icon/icomoon.eot?wgwy6n);
+  src:url(../icon/icomoon.eot?wgwy6n#iefix) format("embedded-opentype"),url(../icon/icomoon.ttf?wgwy6n) format("truetype"),url(../icon/icomoon.woff?wgwy6n) format("woff"),url(../icon/icomoon.svg?wgwy6n#icomoon) format("svg");
+  font-weight:400;
+  font-style:normal;
+}
+
+[class*=" icon-"],[class^=icon-]{
+  font-family:icomoon !important;
+  speak:none;
+  font-style:normal;
+  font-weight:400;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.icon-phone:before{
+  content:"\e942";
+}
+
+.icon-location:before{
+  content:"\e947";
+}
+
+.icon-mobile:before{
+  content:"\e958";
+}
+
+.icon-quotes-right:before{
+  content:"\e978";
+}
+
+.icon-menu:before{
+  content:"\e9bd";
+}
+
+.icon-play3:before{
+  content:"\ea1c";
+}
+
+.icon-circle-right:before{
+  content:"\ea42";
+}
+
+.icon-circle-left:before{
+  content:"\ea44";
+}
+
+.icon-paragraph-justify:before{
+  content:"\ea7a";
+}
+
+.icon-mail2:before{
+  content:"\ea84";
+}
+
+.icon-google-plus2:before{
+  content:"\ea8c";
+}
+
+.icon-facebook2:before{
+  content:"\ea91";
+}
+
+.icon-whatsapp:before{
+  content:"\ea93";
+}
+
+.icon-twitter:before{
+  content:"\ea96";
+}
+
+.icon-youtube:before{
+  content:"\ea9d";
+}
+
+.icon-file-pdf:before{
+  content:"\eadf";
+}
+
+.icon-file-word:before{
+  content:"\eae1";
+}
+
+.icon-file-excel:before{
+  content:"\eae2";
+}
+
+/*# sourceMappingURL=styles.css.map */
