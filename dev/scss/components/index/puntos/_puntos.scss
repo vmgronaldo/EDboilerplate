@@ -1,0 +1,70 @@
+.puntosventas-main{
+padding: 50px 0;
+  &__items{
+    @include desde($large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+    &__item{
+      h2{
+        font-family: $titulos, sans-serif;
+        color: $negro;
+        font-weight: 700;
+        font-size:2em;
+        margin: 0px;
+        line-height: 1;
+        @include desde($large) {
+          font-size: 3.5em;
+      }
+       
+      }
+      img{
+        position: relative;
+        top:50px;
+      }
+      p{
+        font-family: $textos, sans-serif;
+        color: $negro;
+        font-size:1em;
+        margin: 20px 0 40px 0px;
+
+      }
+      h3{
+        font-family: $titulos, sans-serif;
+        color: $crema;
+        font-size:1.5em;
+        margin: 0px;
+        @include desde($large) {
+          font-size: 2em;
+      }
+      }
+
+      &__paises{
+        margin: 20px 0;
+
+        @include desde($mediun) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+
+     
+      div{
+        font-family: $titulos, sans-serif;
+        color: $negro;
+        font-size:1.2em;
+        font-weight: bold;
+        margin: 10px 0px;
+       
+        li{
+          list-style: none;
+          i {
+            font-weight: bold;
+          }
+        }
+      }
+
+
+      }
+    }
+  }
+}

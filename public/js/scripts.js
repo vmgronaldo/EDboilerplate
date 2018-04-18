@@ -23,8 +23,6 @@ var despedida = exports.despedida = function despedida() {
   console.log('Adiós mundo');
 };
 
-$('.carousel').carousel();
-
 },{}]},{},[1]);
 
 //# sourceMappingURL=scripts.js.map

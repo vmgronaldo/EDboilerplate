@@ -1,0 +1,18 @@
+.cd-header__nav{
+    ul{
+        font-family: $titulos,sans-serif;
+        font-size: 1em;
+
+        li{
+
+            a{
+                transition: ease-in-out .25s;
+                &:hover{
+                    color:$crema;
+                    transition: ease-in-out .25s
+                }
+
+            }
+        }
+    }
+}

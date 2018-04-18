@@ -1,0 +1,108 @@
+.footer-main {
+    width: 100%;
+    background: $negro;
+    position: relative;
+    &__content {
+        padding: 50px 0;
+        @include desde($large) {
+        
+            background: url(../img/footer-img.png) no-repeat;
+            background-size: 80%;
+            background-position: 60% 0%;
+        }
+
+        &__item {
+            display: grid;
+            grid-column-gap: 2em;
+            h1 {
+                margin: 0px;
+                color:$crema;
+            }
+            @include desde($mediun) {
+                 grid-template-columns: repeat(2,1fr);
+        
+            }
+    
+            @include desde($large) {
+                grid-template-columns: repeat(3,1fr); 
+            }
+            &__about{
+
+                a{
+
+                    img{
+
+                    }
+                }
+                p{
+                    font-family: $textos,sans-serif;
+                    color:$white;
+                    font-size: 1em;
+                  
+                    @include desde($large) {
+                        width: 80%;
+                
+                    }
+                }
+
+
+            }
+           &__contact{
+               h1{
+
+               }
+
+               ul{
+                   list-style: none;
+                   padding: 0px;
+                margin: 0px;
+                font-family: $titulosm,sans-serif;
+                color:$white;
+                   li{
+                       margin: 20px 0;
+                       i{
+                           padding-right: 10px;
+                           font-size: 2em;
+                           color:$crema;
+                           @include desde($large) {
+                            font-size: 1em;
+                    
+                        }
+                           
+                       }
+                       span{
+              
+
+                    }
+                   }
+               }
+                
+
+            }
+
+            &__facebook{
+                display: none;
+                @include desde($large) {
+                    display: block;            
+                }
+
+            }
+        }
+        &__copy {
+            width: 100%;
+            background: rgba(0,0,0,.35);
+            text-align: center;
+            
+            p {
+                color: $white;
+                font-size: 1em;
+                margin: 0px;
+                padding: 20px 0px;
+                width: 80%;
+                margin: 0 auto;
+
+            }
+        }
+    }
+  
+}

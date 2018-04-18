@@ -1,11 +1,21 @@
 .productos-main {
+
     &__blocktitle {
-        @include desde($mediun) {
-            height: 200px;
-        }
+        height: 100px;
+      @include desde($large) {
+        height: 150px;
+
+ 
+    }
      
         &__title {
             text-align: center;
+            @include desde($mediun) {
+                position: absolute;
+                left:0;
+                right: 0;
+                display:block;
+            }
             span {
                 font-family: $titulos, sans-serif;
                 color: $white;
@@ -30,6 +40,7 @@
                 color: $marron;
                 font-weight: 700;
                 font-size: 3em;
+                margin: 0px;
                 @include desde($mediun) {
                     position: relative;
                     top:40px;
@@ -63,7 +74,7 @@
                 @include desde($mediun) {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    padding: 40px 0;
+                    padding: 0px 0 40px 0;
                 }
                 div {
                     text-align: center;
@@ -84,5 +95,15 @@
                 }
             }
         }
+    }
+
+    &__button{
+      width: 100%;
+      text-align: center;
+
+      a{
+        cursor: pointer;
+        //padding: 15px;
+      }
     }
 }
