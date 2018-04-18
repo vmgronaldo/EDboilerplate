@@ -54,49 +54,54 @@ block main
                 img(src="img/p2.png", alt="")
                 h3 Chocolate Premiun
                 p 70% Cacao Organico
-      div
-        button ver mas productos
-    section.l-container
-      div
-        div
+      div(class="productos-main__button")
+        a(class="button primary") Mas productos
+    section(class="puntosventas-main l-container")
+      div(class="puntosventas-main__items")
+        div(class="puntosventas-main__items__item")
           h2 Puntos de venta y entrega
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
           h3 Paises consumidores
-          div
+          div(class="puntosventas-main__items__item__paises")
             div
-              li Canada
-              li Usa
-              li Mexico
+              li
+               i(class="icon-play3")  Canada
+              li 
+               i(class="icon-play3")  Usa
+              li 
+               i(class="icon-play3")  Mexico
             div
-              li Brazil
-              li Aregentina
-              li Europa
+              li 
+               i(class="icon-play3")  Brazil
+              li 
+               i(class="icon-play3")  Aregentina
+              li 
+               i(class="icon-play3")  Europa
             div
-              li Rusia
-              li Asia
-              li Australia
-          button ver lista
+              li 
+               i(class="icon-play3")  Rusia
+              li 
+               i(class="icon-play3")  Asia
+              li 
+               i(class="icon-play3")  Australia
+         
+          a(class="button primary") Ver lista
 
-        div
-          img(src="", alt="")
-          h1 Img
-    section.l-container
-      div
-        div
-          div
-            div
-              span Mas de
-              h2 1000
-              span Clientes confian en Nosotros
-            
-            div
-              img(src="", alt="")
-
-        div
+        div(class="puntosventas-main__items__item")
+          img(src="img/map.png", alt="")
+        
+    section(class="clientes-main ")
+      div(class="clientes-main__distribuidor l-container")
+        div(class="clientes-main__distribuidor__slogan")
+          h3 Mas de
+          h1 1000
+          h2 Clientes confian en Nosotros
+        div(class="clientes-main__distribuidor__contactanos")
           h3 Conviertase en nuestro distribuidor
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
-          button contactanos
-      div
+          a(class="button primary") Contactanos
+      div(class="clientes-main__numeros")
+        div(class="clientes-main__numeros__main l-container")
           div
             h1 +9,668
             h4 Bosques Refortestados
@@ -107,31 +112,34 @@ block main
             h1 +2,000
             h4 Socios Beneficiados
 
-    section
-      div.l-container
-        div(class="d-flex justify-content-between")
+    section(class="testimonios-main")
+      div(class="testimonios-main__content")
+        div(class="testimonios-main__content__socios")
           div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
+            img(src="../img/socio-1.png", alt="")
           div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
+            img(src="../img/socio-2.png", alt="")
           div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
+            img(src="../img/socio-3.png", alt="")
           div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
+            img(src="../img/socio-4.png", alt="")
           div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
-        
-        div
+            img(src="../img/socio-5.png", alt="")
           div
-            div(class="")
-              h4(class="") Nuestros clientes dicen
-              h2(class="") Testimonios
+            img(src="../img/socio-5.png", alt="")
+
+        div(class="testimonios-main__content__testigos")
+          div(class="testimonios-main__content__testigos__datos")
+            div
+              h4 Nuestros clientes dicen
+              h2 Testimonios
               span Gabriel Viza
+              br
               span 19/04/2018
-              p(class="") And an even wittier subheading.
-              i item
-          div
-            img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/coffe_back.png?id=2084", alt="")
+              p(class="") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              i(class="icon-quotes-right")
+          div(class="testimonios-main__content__testigos__img")
+            img(src="../img/testimonios.png", alt="")
           
 
 
