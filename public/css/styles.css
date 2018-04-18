@@ -119,7 +119,6 @@ body{
   content:"\eae2";
 }
 
-<<<<<<< HEAD
 .cd-header__nav ul{
   font-family:bold,sans-serif;
   font-size:1em;
@@ -133,8 +132,6 @@ body{
   color:#c0aa83;
 }
 
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 .button{
   font-size:1.2em;
   transition:all .25s;
@@ -147,10 +144,7 @@ body{
   line-height:1.9em;
   padding:10px 40px;
   border:2px solid #c0aa83;
-<<<<<<< HEAD
   transition:all .25s;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 .button.primary:hover{
@@ -162,7 +156,6 @@ body{
 }
 
 .button.secondary{
-<<<<<<< HEAD
   background:#c0aa83;
   color:#242424;
   line-height:1.9em;
@@ -175,17 +168,6 @@ body{
   border-color:#242424;
   background:#f4f4f4;
   color:#242424;
-=======
-  background:#242424;
-  color:#f4f4f4;
-  border:1px solid #f4f4f4;
-  border-radius:3px;
-}
-
-.button.secondary:hover{
-  background:transparent;
-  color:red;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
   transition:all .25s;
   text-decoration:none;
 }
@@ -469,11 +451,7 @@ body{
 }
 
 .puntosventas-main{
-<<<<<<< HEAD
   padding:50px 0;
-=======
-  margin:50px 0;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -490,11 +468,8 @@ body{
   color:#242424;
   font-weight:700;
   font-size:2em;
-<<<<<<< HEAD
   margin:0;
   line-height:1;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -503,14 +478,11 @@ body{
   }
 }
 
-<<<<<<< HEAD
 .puntosventas-main__items__item img{
   position:relative;
   top:50px;
 }
 
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 .puntosventas-main__items__item p{
   font-family:light,sans-serif;
   color:#242424;
@@ -522,11 +494,7 @@ body{
   font-family:bold,sans-serif;
   color:#c0aa83;
   font-size:1.5em;
-<<<<<<< HEAD
   margin:0;
-=======
-  margin:20px 0 40px;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -535,13 +503,10 @@ body{
   }
 }
 
-<<<<<<< HEAD
 .puntosventas-main__items__item__paises{
   margin:20px 0;
 }
 
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 @media screen and (min-width:768px){
   .puntosventas-main__items__item__paises{
     display:-ms-grid;
@@ -568,11 +533,7 @@ body{
 }
 
 .clientes-main__distribuidor{
-<<<<<<< HEAD
   padding:50px 0 150px;
-=======
-  padding:50px 0 200px;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:768px){
@@ -583,11 +544,7 @@ body{
         grid-template-columns:1fr 1fr;
     background:url(../img/coffee-cup.png) no-repeat;
     background-size:50%;
-<<<<<<< HEAD
     background-position:20% 70%;
-=======
-    background-position:10% 70%;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
   }
 }
 
@@ -599,10 +556,7 @@ body{
 
 .clientes-main__distribuidor__slogan{
   font-family:bold,sans-serif;
-<<<<<<< HEAD
   line-height:1.1;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 .clientes-main__distribuidor__slogan h2,.clientes-main__distribuidor__slogan h3{
@@ -650,10 +604,6 @@ body{
   font-size:1.5em;
   color:#242424;
   margin:30px 0 20px;
-<<<<<<< HEAD
-  line-height:1;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -670,11 +620,7 @@ body{
 
 .clientes-main__numeros{
   background:#44200e;
-<<<<<<< HEAD
-  padding:30px 0;
-=======
   padding:100px 0;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
   color:#c0aa83;
 }
 
@@ -710,18 +656,12 @@ body{
 .clientes-main__numeros__main div h1{
   font-weight:700;
   font-size:3em;
-<<<<<<< HEAD
   margin:0;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 .clientes-main__numeros__main div h4{
   font-family:light,sans-serif;
-<<<<<<< HEAD
   margin:0;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
   color:#f4f4f4;
   font-weight:500;
   font-size:1.2em;
@@ -775,7 +715,6 @@ body{
   }
 }
 
-<<<<<<< HEAD
 .testimonios-main__content__testigos__datos{
   margin:0;
   background:url(../img/testimonials.png) no-repeat;
@@ -783,8 +722,6 @@ body{
   background-position:50%;
 }
 
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 @media screen and (min-width:768px){
   .testimonios-main__content__testigos__datos{
     -webkit-box-align:center;
@@ -805,10 +742,7 @@ body{
   color:#c0aa83;
   font-weight:700;
   font-size:1.5em;
-<<<<<<< HEAD
   margin:0;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -822,10 +756,7 @@ body{
   color:#44200e;
   font-weight:700;
   font-size:2em;
-<<<<<<< HEAD
   margin:0;
-=======
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 @media screen and (min-width:1024px){
@@ -862,15 +793,10 @@ body{
 
 .testimonios-main__content__testigos__img{
   position:relative;
-<<<<<<< HEAD
-=======
-  z-index:1;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 .testimonios-main__content__testigos__img img{
   position:relative;
-<<<<<<< HEAD
   top:30px;
 }
 
@@ -982,10 +908,6 @@ body{
   padding:20px 0;
   width:80%;
   margin:0 auto;
-=======
-  left:120px;
-  z-index:2;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 }
 
 .l-container{

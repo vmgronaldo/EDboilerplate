@@ -1,19 +1,13 @@
 .button {
     font-size: 1.2em;
     transition: all .25s;
-<<<<<<< HEAD
     font-family: $titulos, sans-serif;
-
-=======
-    font-family: $titulos,sans-serif;
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
     &.primary {
         background: $crema;
         color: $negro;
         line-height: 1.9em;
         padding: 10px 40px;
         border: 2px solid $crema;
-<<<<<<< HEAD
         transition: all .25s;
         &:hover {
             border-color: $negro;
@@ -39,27 +33,3 @@
         }
     }
 }
-=======
-        &:hover {
-       border-color: $negro;
-       background: transparent;
-       color:$negro;
-          transition: all .25s;
-          text-decoration: none;
-      }
-  }
-  &.secondary {
-      background: $negro;
-      color: $white;
-      border:1px solid $white;
-      border-radius: 3px;
-      &:hover {
-          background: transparent;
-          color: red;
-          transition: all .25s;           
-          text-decoration: none;
-      }
-  }
-
-}
->>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
