@@ -1,0 +1,88 @@
+.productos-main {
+    &__blocktitle {
+        @include desde($mediun) {
+            height: 200px;
+        }
+     
+        &__title {
+            text-align: center;
+            span {
+                font-family: $titulos, sans-serif;
+                color: $white;
+                opacity: 0.4;
+                font-weight: 700;
+                font-size: 6em;
+                display:none;
+           
+                @include desde($mediun) {
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    display:block;
+                }
+                @include desde($large) {
+                    font-size: 7em;
+                }
+
+            }
+            h1 {
+                font-family: $titulos, sans-serif;
+                color: $marron;
+                font-weight: 700;
+                font-size: 3em;
+                @include desde($mediun) {
+                    position: relative;
+                    top:40px;
+                }
+            
+                @include desde($large) {
+                    font-size: 4em;
+                    top:50px;
+                }
+            }
+        }
+    }
+    &__blockproducts {
+        @include desde($large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item {
+            max-width: 100%;
+            h2 {
+                font-family: $titulos, sans-serif;
+                color: $crema;
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+            @include desde($large) {
+            text-align: center;
+        
+            }
+            &__items {
+                @include desde($mediun) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 40px 0;
+                }
+                div {
+                    text-align: center;
+            
+                    img {}
+                    h3 {
+                        font-family: $titulos, sans-serif;
+                        color: $marron;
+                        font-weight: 500;
+                        font-size: 1.2em;
+                    }
+                    p {
+                        font-family: $textos, sans-serif;
+                        color: $textosr;
+                        font-weight: 600;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

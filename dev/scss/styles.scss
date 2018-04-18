@@ -12,7 +12,7 @@
 
 // LAYOUT
   // Escribe solo los estilos de layout (division en regiones del viewport)
-@import "layout/layout";
+
 
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
   // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
@@ -27,3 +27,8 @@
   // Todos los hacks que hayas necesitado para solucionar conflictos
   // o resolver situaciones extremas. Se espera poder mejorarlos luego.
 @import "hacks/hacks";
+
+
+@import "components/index/about/abouts";
+@import "components/index/products/products";
+@import "layout/layout";

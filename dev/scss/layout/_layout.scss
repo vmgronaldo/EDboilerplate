@@ -1,0 +1,12 @@
+//loyout
+
+$ligth:300px;
+$normal:400px;
+$max-width: 1300px;
+
+.l-container{
+	width: 90%;
+	max-width: $max-width;
+	margin-left:auto;
+	margin-right:auto;
+}

@@ -1,62 +1,64 @@
 extends ../includes/template
 block main
-    section.container
-      .row
+    section(class="nosotros-main l-container")
+      div(class="nosotros-main__info")
         h3 Cooperativa Agraria
-        h2 Cafetelera Pangoa
+        h1 Cafetelera Pangoa
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio aliquam delectus, enim reiciendis dolorem ullam error unde, corrupti fugit dignissimos est laborum. Vel ullam illum, at harum est aperiam.
-        span Pangoa, Descubre nuestra historia
-      .row
-        div
-          div
-            img(src="", alt="")
+        span Pangoa, Descubre nuestra historia...
+      div(class="nosotros-main__service")
+        div(class="nosotros-main__service__items")
+          div(class="nosotros-main__service__items__item")
+            img(src="img/icon/icon-1.png", alt="")
             h2 Cosecha
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum?
-          div
-            img(src="", alt="")
+          div(class="nosotros-main__service__items__item")
+            img(src="img/icon/icon-2.png", alt="")
             h2 Venta
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum? 
-          div
-            img(src="", alt="")
+        div(class="nosotros-main__service__items")
+          div(class="nosotros-main__service__items__item")
+            img(src="img/icon/icon-3.png", alt="")
             h2 Producción
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum?
-          div
-            img(src="", alt="")
+          div(class="nosotros-main__service__items__item")
+            img(src="img/icon/icon-4.png", alt="")
             h2 Exportación
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum?
-    section.container
-      .row
-        div
+    
+    section(class="productos-main l-container")
+      div(class="productos-main__blocktitle")
+        div(class="productos-main__blocktitle__title")
           span PRODUCTOS
           h1 Productos
-      .row
-          div(class="col-md-6")
+      div(class="productos-main__blockproducts")
+          div(class="productos-main__blockproducts__item col-md-6")
             h2 Nacionales
-            div
+            div(class="productos-main__blockproducts__item__items")
               div
-                img(src="", alt="")
+                img(src="img/p3.png", alt="")
                 h3 Chocolate Premiun
                 p 70% Cacao Organico
               div
-                img(src="", alt="")
+                img(src="img/p2.png", alt="")
                 h3 Chocolate Premiun
                 p 70% Cacao Organico
-          div(class="col-md-6")
+          div(class="productos-main__blockproducts__item col-md-6")
             h2 Exportación
-            div
+            div(class="productos-main__blockproducts__item__items")
               div
-                img(src="", alt="")
+                img(src="img/p3.png", alt="")
                 h3 Chocolate Premiun
                 p 70% Cacao Organico
               div
-                img(src="", alt="")
+                img(src="img/p2.png", alt="")
                 h3 Chocolate Premiun
                 p 70% Cacao Organico
-      .row
+      div
         button ver mas productos
-    section.container
-      .row
-        div(class="col-md-6")
+    section.l-container
+      div
+        div
           h2 Puntos de venta y entrega
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
           h3 Paises consumidores
@@ -75,13 +77,13 @@ block main
               li Australia
           button ver lista
 
-        div(class="col-md-6")
+        div
           img(src="", alt="")
           h1 Img
-    section.container
-      .row
-        div(class="col-md-6")
-          .row
+    section.l-container
+      div
+        div
+          div
             div
               span Mas de
               h2 1000
@@ -90,23 +92,23 @@ block main
             div
               img(src="", alt="")
 
-        div(class="col-md-6")
+        div
           h3 Conviertase en nuestro distribuidor
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
           button contactanos
-      .row
-          div(class="col-md-4")
+      div
+          div
             h1 +9,668
             h4 Bosques Refortestados
-          div(class="col-md-4")
+          div
             h1 +1,000,000
             h4 Soles en proyectos realizados
-          div(class="col-md-4")
+          div
             h1 +2,000
             h4 Socios Beneficiados
 
     section
-      div.container
+      div.l-container
         div(class="d-flex justify-content-between")
           div
             img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
@@ -119,8 +121,8 @@ block main
           div
             img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/restaurants.png", alt="")
         
-        div(class="row")
-          div(class="col-md-6")
+        div
+          div
             div(class="")
               h4(class="") Nuestros clientes dicen
               h2(class="") Testimonios
@@ -128,7 +130,7 @@ block main
               span 19/04/2018
               p(class="") And an even wittier subheading.
               i item
-          div(class="col-md-6")
+          div
             img(src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/coffe_back.png?id=2084", alt="")
           
 
