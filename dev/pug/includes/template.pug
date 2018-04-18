@@ -13,15 +13,11 @@ html(lang="es")
     header(class="cd-header")
       div(class="cd-header__logo")
         a(href="#0")
-          img(src="assets/cd-logo.svg" alt="Logo")
+          img(src="assets/logo.png" alt="Logo")
+
       nav(class="cd-header__nav js-cd-header__nav ") 
-            ul  
-              li
-                a(href="#0") home 
-              li
-                a(href="#0") home 
-              li
-                a(href="#0") home
+          block config
+            include config/menu.pug
   
     section(class="cd-hero js-cd-hero js-cd-autoplay")
       ul(class="cd-hero__slider")
@@ -31,17 +27,18 @@ html(lang="es")
             p A simple, responsive slideshow in CSS &amp; JavaScript.
             a(href="" class="cd-hero__btn" ) ver productos
         
+        
         li(class="cd-hero__slide js-cd-slide")
           div(class="cd-hero__content cd-hero__content--half-width")
             h2 hero slider 
             p A simple, responsive slideshow in CSS &amp; JavaScript.
             a(href="" class="cd-hero__btn" ) ver productos
           div(class="cd-hero__content cd-hero__content--half-width cd-hero__content--img")
-            img(src="assets/tech-1.jpg", alt="")
+            img(src="img/p2.png", alt="")
        
         li(class="cd-hero__slide js-cd-slide")
           div(class="cd-hero__content cd-hero__content--half-width cd-hero__content--img")
-            img(src="assets/tech-2.jpg", alt="")
+            img(src="img/p3.png", alt="")
       
           div(class="cd-hero__content cd-hero__content--half-width")
             h2 hero slider 
@@ -55,31 +52,30 @@ html(lang="es")
             a(href="" class="cd-hero__btn" ) ver productos
           div(class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="assets/video/video")
 
-      div(class="cd-hero__nav js-cd-nav")
-        nav
-          span(class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker")
-          ul
-            li(class="cd-selected")
-              a(href="") Intro
-            li(class="")
-              a(href="") Tech 1
-            li(class="")
-              a(href="") Tech 2
-            li(class="")
-              a(href="") Video
-      div
-        img(src="img/border.png", alt="")
+      div     
+        div(class="cd-hero__nav js-cd-nav")
+          nav
+            span(class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker")
+            ul
+              li(class="cd-selected")
+                a(href="") 
+              li(class="")
+                a(href="")
+              li(class="")
+                a(href="")
+              li(class="")
+                a(href="")
   
     
     block main
 
-    footer
+    footer.container
       div.row
-        div(class="col-md-4")
+        div(class="")
           a(href="#0")
            img(src="assets/cd-logo.svg" alt="Logo")
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aspernatur? Atque commodi temporibus voluptatum cupiditate. Itaque odio vitae illum nostrum assumenda at, libero possimus quia et nisi ut ullam atque.
-        div(class="col-md-4")
+        div(class="")
           h1 Contactanos
           ul
             li
@@ -95,7 +91,7 @@ html(lang="es")
               i 
               spam 960492147
            
-        div(class="col-md-4")
+        div(class="")
           h1 Facebook
 
 
