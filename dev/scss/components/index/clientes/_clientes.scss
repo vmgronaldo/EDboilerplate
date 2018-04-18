@@ -1,12 +1,20 @@
 .clientes-main{
   &__distribuidor{
+<<<<<<< HEAD
     padding: 50px 0 150px 0;
+=======
+    padding: 50px 0 200px 0;
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
     @include desde($mediun) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       background: url(../img/coffee-cup.png)no-repeat;
       background-size:50%;
+<<<<<<< HEAD
       background-position: 20% 70%;
+=======
+      background-position: 10% 70%;
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
     }
     @include desde($large) {
 
@@ -15,8 +23,12 @@
     }
     &__slogan{
       font-family: $titulos, sans-serif;
+<<<<<<< HEAD
 
     line-height: 1.1;
+=======
+     
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
       h3,h2{
         font-size: 2em;
         color: $negro;
@@ -57,7 +69,10 @@
         font-size: 1.5em;
         color: $negro;
         margin: 30px 0 20px 0;
+<<<<<<< HEAD
         line-height: 1;
+=======
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
         @include desde($large) {
           font-size: 3em;
             }
@@ -79,9 +94,16 @@
 
   &__numeros{
     background: $marron;
+<<<<<<< HEAD
     padding: 30px 0;
     color:$crema;
     @include desde($mediun) {
+=======
+    padding: 100px 0;
+    color:$crema;
+    @include desde($mediun) {
+ 
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
       background: url(../img/parrallax-cafe-count.jpg) no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -92,6 +114,10 @@
   &__main{
       text-align: center;
       
+<<<<<<< HEAD
+=======
+
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
     @include desde($mediun) {
       display: grid;
       grid-template-columns: repeat(3,1fr)
@@ -107,11 +133,18 @@
       h1{
         font-weight: 700;
         font-size: 3em;
+<<<<<<< HEAD
         margin: 0px;
       }
       h4{
         font-family: $textos, sans-serif;
         margin: 0px;
+=======
+      }
+      h4{
+        font-family: $textos, sans-serif;
+
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
         color:$white;
         font-weight: 500;
         font-size: 1.2em;

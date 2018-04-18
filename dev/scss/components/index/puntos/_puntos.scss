@@ -1,5 +1,9 @@
 .puntosventas-main{
+<<<<<<< HEAD
 padding: 50px 0;
+=======
+margin: 50px 0;
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
   &__items{
     @include desde($large) {
       display: grid;
@@ -11,17 +15,23 @@ padding: 50px 0;
         color: $negro;
         font-weight: 700;
         font-size:2em;
+<<<<<<< HEAD
         margin: 0px;
         line-height: 1;
+=======
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
         @include desde($large) {
           font-size: 3.5em;
       }
        
       }
+<<<<<<< HEAD
       img{
         position: relative;
         top:50px;
       }
+=======
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
       p{
         font-family: $textos, sans-serif;
         color: $negro;
@@ -33,21 +43,31 @@ padding: 50px 0;
         font-family: $titulos, sans-serif;
         color: $crema;
         font-size:1.5em;
+<<<<<<< HEAD
         margin: 0px;
+=======
+        margin: 20px 0 40px 0px;
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
         @include desde($large) {
           font-size: 2em;
       }
       }
 
       &__paises{
+<<<<<<< HEAD
         margin: 20px 0;
+=======
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
 
         @include desde($mediun) {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
       }
 
+<<<<<<< HEAD
      
+=======
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
       div{
         font-family: $titulos, sans-serif;
         color: $negro;

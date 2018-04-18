@@ -1,11 +1,16 @@
 .productos-main {
 
     &__blocktitle {
+<<<<<<< HEAD
         height: 100px;
       @include desde($large) {
         height: 150px;
 
  
+=======
+      @include desde($mediun) {
+        height: 200px;
+>>>>>>> f83cedd581625c3fa343af01fed8032a4aa26739
     }
      
         &__title {
