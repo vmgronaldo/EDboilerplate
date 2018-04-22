@@ -21,73 +21,78 @@
             }
         }
         &__testigos {
-          overflow: hidden;
-          display: grid;
-      
-          @include desde($mediun) {
-            grid-template-columns: repeat(2, 1fr);
-            padding: 0px 0 50px 0px;
-        }
-            &__datos {
-              @include desde($mediun) {
-                align-items: center;
-                display: flex;
+            overflow: hidden;
+            display: grid;
+            @include desde($mediun) {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 0px 0 50px 0px;
             }
-             
+            &__datos {
+                margin: 0;
+                background: url(../img/testimonials.png) no-repeat;
+                background-size: 80%;
+                background-position: center center;
+                @include desde($mediun) {
+                    align-items: center;
+                    display: flex;
+                }
                 div {
-                  text-align: center;
+                    text-align: center;
                     h4 {
                         font-family: $titulos, sans-serif;
                         color: $crema;
                         font-weight: 700;
                         font-size: 1.5em;
+                        margin: 0;
                         @include desde($large) {
-                          font-size: 2.5em;
-                      }
+                            font-size: 2.5em;
+                        }
                     }
                     h2 {
-                      font-family: $titulos, sans-serif;
-                      color: $marron;
-                      font-weight: 700;
-                      font-size: 2em;
-                      @include desde($large) {
-                        font-size: 3.5em;
-                    }
+                        font-family: $titulos, sans-serif;
+                        color: $marron;
+                        font-weight: 700;
+                        font-size: 2em;
+                        margin: 0;
+                        @include desde($large) {
+                            font-size: 3.5em;
+                        }
                     }
                     span {
-                      font-family: $titulos, sans-serif;
-                      color: $negro;
-                      font-size: 1em;
-
+                        font-family: $titulos, sans-serif;
+                        color: $negro;
+                        font-size: 1em;
                     }
                     p {
-                      color: $negro;
-                      font-family: $textosr, sans-serif;
-                      font-size: 1em;
-                      margin: 20px 0px;
-                      @include desde($large) {
-                        text-align: center;
-                        font-size: 1.2em;
-                        width: 80%;
-                        margin: 40px auto;;
-                    }
+                        color: $negro;
+                        font-family: $textosr, sans-serif;
+                        font-size: 1em;
+                        margin: 20px 0px;
+                        @include desde($large) {
+                            text-align: center;
+                            font-size: 1.2em;
+                            width: 80%;
+                            margin: 40px auto;
+                            
+                        }
                     }
                     i {
-
-                      font-size: 3em;
+                        font-size: 3em;
                     }
                 }
             }
             &__img {
-              position: relative;
-              z-index: 199;
+                position: relative;
+       
                 img {
-                  position: relative;
-                  left: 120px;
-                  z-index: 999999;
-
+                    position: relative;
+                    top: 30px;
+                    @include desde($mediun) {
+                        top: 150px;
+                        
+                    }
+                
                 }
-              
             }
         }
     }

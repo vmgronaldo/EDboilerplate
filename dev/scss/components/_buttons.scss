@@ -1,32 +1,35 @@
 .button {
     font-size: 1.2em;
     transition: all .25s;
-    font-family: $titulos,sans-serif;
+    font-family: $titulos, sans-serif;
     &.primary {
         background: $crema;
         color: $negro;
         line-height: 1.9em;
         padding: 10px 40px;
         border: 2px solid $crema;
+        transition: all .25s;
         &:hover {
-       border-color: $negro;
-       background: transparent;
-       color:$negro;
-          transition: all .25s;
-          text-decoration: none;
-      }
-  }
-  &.secondary {
-      background: $negro;
-      color: $white;
-      border:1px solid $white;
-      border-radius: 3px;
-      &:hover {
-          background: transparent;
-          color: red;
-          transition: all .25s;           
-          text-decoration: none;
-      }
-  }
-
+            border-color: $negro;
+            background: transparent;
+            color: $negro;
+            transition: all .25s;
+            text-decoration: none;
+        }
+    }
+    &.secondary {
+        background: $crema;
+        color: $negro;
+        line-height: 1.9em;
+        padding: 10px 40px;
+        border: 2px solid $crema;
+        transition: all .25s;
+        &:hover {
+            border-color: $negro;
+            background: $white;
+            color: $negro;
+            transition: all .25s;
+            text-decoration: none;
+        }
+    }
 }

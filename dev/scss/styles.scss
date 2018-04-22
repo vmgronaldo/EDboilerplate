@@ -18,11 +18,10 @@
   // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
   // Crea los archivos adicionales que necesites (uno por componente)
 
-@import "components/menus";
 
 // Theme (colors and fonts)
 @import "theme/typography";
-
+@import "components/menus";
 // Utilities (hacks)
   // Todos los hacks que hayas necesitado para solucionar conflictos
   // o resolver situaciones extremas. Se espera poder mejorarlos luego.
@@ -34,5 +33,6 @@
 @import "components/index/puntos/puntos";
 @import "components/index/clientes/clientes";
 @import "components/index/testimonios/testimonios";
+@import "components/index/footer/footer";
 
 @import "layout/layout";

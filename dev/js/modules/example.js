@@ -9,4 +9,4 @@ export const despedida = () => {
   console.log('Adiós mundo')
 };
 
-$('.carousel').carousel()
+
