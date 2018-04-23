@@ -2,8 +2,8 @@ ul( class='' style="" )
   each page in pages
     // Operador ternario que añade la clase active si el item de menu coincide con la pagina
     // -page == currentPage ? menuactivo = 'menuactivo' : menuactivo = ''
-    if page != 'index'
-      li.main-menu__item: a(href=page class='') #{page}   
-
+    if page !='index'
+      li.main-menu__item: a(href=page+".html" class='') #{page}  
+    
 
    
