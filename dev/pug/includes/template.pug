@@ -9,7 +9,9 @@ html(lang="es")
     link(rel="stylesheet" href="css/styles.css")
     link(rel="stylesheet" href="css/slider-css.css")
   body
-    header(class="cd-header")
+
+
+    header(class="cd-header head-active")
       div(class="cd-header__logo")
         a(href="#0")
           img(src="assets/logo.png" alt="Logo")
@@ -17,55 +19,6 @@ html(lang="es")
       nav(class="cd-header__nav js-cd-header__nav ") 
           block config
             include config/menu.pug
-  
-    section(class="cd-hero js-cd-hero js-cd-autoplay")
-      ul(class="cd-hero__slider")
-        li(class="cd-hero__slide cd-hero__slide--selected js-cd-slide")
-          div(class="cd-hero__content cd-hero__content--full-width")
-            h2 hero slider 
-            p A simple, responsive slideshow in CSS &amp; JavaScript.
-            a(href="" class="button secondary" ) ver productos
-        
-        
-        li(class="cd-hero__slide js-cd-slide")
-          div(class="cd-hero__content cd-hero__content--half-width")
-            h2 hero slider 
-            p A simple, responsive slideshow in CSS &amp; JavaScript.
-            a(href="" class="button secondary" ) ver productos
-          div(class="cd-hero__content cd-hero__content--half-width cd-hero__content--img")
-            img(src="img/p2.png", alt="")
-       
-        li(class="cd-hero__slide js-cd-slide")
-          div(class="cd-hero__content cd-hero__content--half-width cd-hero__content--img")
-            img(src="img/p3.png", alt="")
-      
-          div(class="cd-hero__content cd-hero__content--half-width")
-            h2 hero slider 
-            p A simple, responsive slideshow in CSS &amp; JavaScript.
-            a(href="" class="button secondary" ) ver productos
-        li(class="cd-hero__slide js-cd-slide")
-         
-          div(class="cd-hero__content cd-hero__content--half-width")
-            h2 hero slider 
-            p A simple, responsive slideshow in CSS &amp; JavaScript.
-            a(href="" class="button secondary" ) ver productos
-          div(class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="assets/video/video")
-
-      div     
-        div(class="cd-hero__nav js-cd-nav")
-          nav
-            span(class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker")
-            ul
-              li(class="cd-selected")
-                a(href="") 
-              li(class="")
-                a(href="")
-              li(class="")
-                a(href="")
-              li(class="")
-                a(href="")
-  
-    
     block main
 
     footer(class="footer-main")
@@ -100,3 +53,5 @@ html(lang="es")
     script(src="js/jquery.js")
     script(src="js/scripts.js")
     script(src="js/slider-css.js")
+
+

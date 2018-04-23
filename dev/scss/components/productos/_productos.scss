@@ -1,0 +1,176 @@
+.producto-main {
+    display: grid;
+    padding: 100px 0px;
+    @include desde($large) {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &__filtros {
+   
+
+      grid-row-gap: 2em;
+        @include desde($large) {
+            width: 25%;
+            padding-right: 40px;
+        }
+   
+        &__categorias{
+
+          h1{
+            color:$negro;
+            font-family: $titulos,sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 0px 0px 15px 10px;
+            margin: 0 0px 25px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            margin-top: 0px;
+
+          }
+          ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            li{
+              padding: 0px;
+              margin: 0px;
+              margin-bottom: 13px;
+              vertical-align: middle;
+              line-height: 1;
+              i{
+                color:$crema;
+              }
+                a{
+                  color:$negro;
+                  font-family: $titulos,sans-serif;
+                  font-weight: bold;
+                  font-size: 1em;       
+                text-decoration: none; 
+                }
+            }
+          }
+
+        }
+        &__tags{
+          h1{
+            color:$negro;
+            font-family: $titulos,sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 15px 0px 10px;
+            margin: 0 0px 25px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+          }
+          div{     
+            display: flex;
+            flex-wrap: wrap;
+            margin: 26px 0 0 0px;
+              a{
+                font-family: $titulos,sans-serif;
+                display: inline;
+                font-size: 1em;
+                font-weight: bold;
+                border-radius: 0px;
+                background-clip: padding-box;
+                color: rgba(0, 0, 0, 0.3);
+                transition: all .3s ease;
+                padding: 0 5px 5px 0px;
+
+                &::before{
+                  content:"#";
+                }
+             
+              }
+            }
+          
+
+        }
+        &__cotizador{
+          h1{
+            color:$negro;
+            font-family: $titulos,sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 15px 0px 10px;
+            margin: 0 0px 25px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+    }
+    &__productos {
+        @include desde($large) {
+            padding-left: 20px;
+            width: 75%;
+        }
+        &__info{
+          span{
+            font-family: $textosr,sans-serif;
+            font-size: 1em;
+            font-weight: 500;
+            color: $negro;
+            transition: all .3s ease;
+            padding: 0 5px 5px 0px;
+          }
+        }
+        &__item {
+            &__content {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                display: grid;
+                text-align: center;
+                grid-gap: 1.5em;
+                padding: 30px 0;
+                @include desde($mediun) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @include desde($x-large) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                &__items {
+                    padding: 20px;
+                    border: 1px solid #f6f6f6;
+                    text-align: center;
+                    border-radius: 0;
+                    background-clip: padding-box;
+                    transition: all .3s ease;
+                    &:hover {
+                        box-shadow: 0 0 10px rgba(146, 146, 146, .4);
+                        transition: all .3s ease;
+                    }
+                    img {}
+                    h1 {
+                        font-family: $titulos, sans-serif;
+                        color: $negro;
+                        margin: 0px 0 15px 0;
+                        line-height: 1;
+                        text-align: left;
+                    }
+                    p {
+                        margin: 0px 0;
+                        font-family: $textosr, sans-serif;
+                        font-size: .9em;
+                        text-align: left;
+                    }
+                    div {
+                        padding: 10px 0 0 0;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-column-gap: 1em;
+                        span {
+                            font-family: $titulos, sans-serif;
+                            color: $crema;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                            text-align: left;
+                        }
+                        a {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

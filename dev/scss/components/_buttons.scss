@@ -33,3 +33,28 @@
         }
     }
 }
+
+
+.btnproducto{
+    font-family: $textosr, sans-serif;
+    font-weight:700;
+    font-size: .9em;
+    padding: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    border-radius: 50px;
+    text-decoration: none;
+    &.primary {
+        background: $crema;
+        color: $negro;
+        transition: all .25s;
+        &:hover {
+            background: $negro;
+            color: $white;
+            transition: all .25s;
+            text-decoration: none;
+        }
+    }
+}
+
