@@ -85,7 +85,7 @@
             color: #242424;
             margin: 0;
             @include desde($mediun) {
-                font-size: 1.3em;
+                font-size: 1.1em;
                 line-height: 36px;
             }
         }
@@ -164,7 +164,7 @@
           font-family: $textosr, sans-serif;
           color: $negro;
           font-weight: 500;
-          font-size: 1em;
+          font-size: .9em;
           margin: 10px 0px;
         }
     }
@@ -189,7 +189,9 @@
 
       &__info{
         font-family: $titulos,sans-serif;
-        margin: 20px 0;
+        margin: 0 0 30px 0;
+        line-height: 1;
+
         h3{
           color:$crema;
           font-size: 2em;
@@ -211,7 +213,7 @@
           grid-gap: 2em;
      
       }
-      @include desde($large) {
+      @include desde($x-large) {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2em;
     
@@ -228,7 +230,7 @@
               height: 200px;
               
               margin: 0 auto;
-              padding: 0 20px;
+              //padding: 0 20px;
             }
           
           
@@ -239,10 +241,12 @@
             color:$crema;
             font-size: 1.5em;
             letter-spacing: 2px;
+            margin: 0px;
             
           }
           p{
             font-family: $textos,sans-serif;
+            font-size: .9em;
 
           }
           span{
