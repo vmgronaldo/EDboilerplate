@@ -43,6 +43,17 @@
                 }
             }
         }
+      
+    }
+    .border-cafe {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 2;
+      text-align: center;
+      height: 50px;
+      background: url(../img/border.png)no-repeat;
+      background-size: cover;
     }
 }
 
@@ -89,7 +100,6 @@
                 line-height: 36px;
             }
         }
-    
     }
     &__video {
         a {
@@ -125,16 +135,15 @@
                 border-color: rgba(255, 255, 255, .8);
             }
         }
-
-        p{
-          width: 80%;
-          margin: 0 auto;
-          text-align: center;
-          font-family: kanit;
-          font-weight: bold;
-          letter-spacing: 2px;
-          padding-top: 50px;
-          font-size: 1.2em;
+        p {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-family: kanit;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-top: 50px;
+            font-size: 1.2em;
         }
     }
 }
@@ -149,7 +158,6 @@
     }
     @include desde($large) {
         grid-template-columns: repeat(4, 1fr);
-     
     }
     &__item {
         img {}
@@ -161,18 +169,17 @@
             margin: 0;
         }
         p {
-          font-family: $textosr, sans-serif;
-          color: $negro;
-          font-weight: 500;
-          font-size: .9em;
-          margin: 10px 0px;
+            font-family: $textosr, sans-serif;
+            color: $negro;
+            font-weight: 500;
+            font-size: .9em;
+            margin: 10px 0px;
         }
     }
 }
 
-
-.team-main{
-  background: url(../img/parrallax-team.jpg) no-repeat;
+.team-main {
+    background: url(../img/parrallax-team.jpg) no-repeat;
     background-size: cover;
     background-position: 50%;
     overflow: hidden;
@@ -184,81 +191,61 @@
     display: flex;
     justify-content: center;
     padding: 100px 0;
-
-    &__content{
-
-      &__info{
-        font-family: $titulos,sans-serif;
-        margin: 0 0 30px 0;
-        line-height: 1;
-
-        h3{
-          color:$crema;
-          font-size: 2em;
-          margin: 0px;
-        }
-
-        h1{
-          margin: 0px;
-          color:$white;
-          font-size:3.5em;
-        }
-
-      }
-      &__team{
-        display: grid;
-        grid-row-gap: 2em;
-        @include desde($mediun) {
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 2em;
-     
-      }
-      @include desde($x-large) {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2em;
-    
-    }
-        &__item{
-          border:4px solid $crema;
-          padding: 30px 10px ;
-          color:$white;
-          div{
-          
-            img{
-              border-radius: 50%;
-              width: 200px;
-              height: 200px;
-              
-              margin: 0 auto;
-              //padding: 0 20px;
+    &__content {
+        &__info {
+            font-family: $titulos, sans-serif;
+            margin: 0 0 30px 0;
+            line-height: 1;
+            h3 {
+                color: $crema;
+                font-size: 2em;
+                margin: 0px;
             }
-          
-          
-          }
-        
-          h1{
-            font-family: $titulos,sans-serif;
-            color:$crema;
-            font-size: 1.5em;
-            letter-spacing: 2px;
-            margin: 0px;
-            
-          }
-          p{
-            font-family: $textos,sans-serif;
-            font-size: .9em;
-
-          }
-          span{
-            font-family: $titulos,sans-serif;
-            letter-spacing: 2px;
-          }
-
-
-
-
+            h1 {
+                margin: 0px;
+                color: $white;
+                font-size: 3.5em;
+            }
         }
-      }
+        &__team {
+            display: grid;
+            grid-row-gap: 2em;
+            @include desde($mediun) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2em;
+            }
+            @include desde($x-large) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 2em;
+            }
+            &__item {
+                border: 4px solid $crema;
+                padding: 30px 10px;
+                color: $white;
+                div {
+                    img {
+                        border-radius: 50%;
+                        width: 200px;
+                        height: 200px;
+                        margin: 0 auto; //padding: 0 20px;
+                    }
+                }
+                h1 {
+                    font-family: $titulos, sans-serif;
+                    color: $crema;
+                    font-size: 1.5em;
+                    letter-spacing: 2px;
+                    margin: 0px;
+                }
+                p {
+                    font-family: $textos, sans-serif;
+                    font-size: .9em;
+                }
+                span {
+                    font-family: $titulos, sans-serif;
+                    letter-spacing: 2px;
+                }
+            }
+        }
     }
-
 }

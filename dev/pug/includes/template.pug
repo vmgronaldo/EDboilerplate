@@ -6,26 +6,31 @@ html(lang="es")
     title Pangoa
     meta(charset="utf-8")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    script(src="js/jquery.js")
+    script(src="js/bootstrap.min.js")
+    link(rel="stylesheet" href="css/bootstrap.min.css")
     link(rel="stylesheet" href="css/styles.css")
-    link(rel="stylesheet" href="css/slider-css.css")
+
   body
 
 
-    header(class="cd-header head-active")
-      div(class="cd-header__logo")
-        a(href="#0")
-          img(src="assets/logo.png" alt="Logo")
-
-      nav(class="cd-header__nav js-cd-header__nav ") 
-          block config
-            include config/menu.pug
+    header(class="main-header")
+      div(class="l-container")
+        a(href="index.html")
+          img(src="assets/logo-2.png" alt="" class="logo")
+        div(id="toggle-menu" class="icon-menu")
+        nav(class="main-nav" id="main-nav")
+          include config/menu.pug       
+          
+   
+   
     block main
 
     footer(class="footer-main")
       div(class="footer-main__content")
         div(class="footer-main__content__item l-container")
           div(class="footer-main__content__item__about")
-            a(href="#0")
+            a(href="index.html")
               img(src="assets/logo.png" alt="Logo")
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aspernatur? Atque commodi temporibus voluptatum cupiditate. Itaque odio vitae illum nostrum assumenda at, libero possimus quia et nisi ut ullam atque.
           div(class="footer-main__content__item__contact")
@@ -50,8 +55,7 @@ html(lang="es")
         p © 2018 Cooperativa Pangoa - Todos los derechos reservados - InnovaMarketing
 
 
-    script(src="js/jquery.js")
-    script(src="js/scripts.js")
-    script(src="js/slider-css.js")
+  script(src="js/scripts.js")
+
 
 

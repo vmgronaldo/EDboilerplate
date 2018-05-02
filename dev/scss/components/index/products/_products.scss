@@ -78,17 +78,16 @@
                 }
                 div {
                     text-align: center;
-            
+                    font-family: $titulos, sans-serif;
                     img {}
                     h3 {
-                        font-family: $titulos, sans-serif;
+                        
                         color: $marron;
                         font-weight: 500;
                         font-size: 1.2em;
                     }
                     p {
-                        font-family: $textos, sans-serif;
-                        color: $textosr;
+
                         font-weight: 600;
                         font-size: 1em;
                     }

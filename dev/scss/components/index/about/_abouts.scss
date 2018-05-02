@@ -111,9 +111,7 @@ position: relative !important;
                     color: $negro;
                     font-size: 1em;
                     margin: 0px ;
-                    @include desde($mediun) {
-                        font-size: 0.9em;
-                    }
+              
                 }
             }
         }

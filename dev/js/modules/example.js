@@ -9,5 +9,16 @@ export const despedida = () => {
   console.log('Adiós mundo')
 };
 
+export const toggle = () => {
+  $(function(){
+    var togglemenu=$('#toggle-menu');
+    var nav=$('#main-nav');
+    togglemenu.on('click',function(){
+      nav.add($('body')).toggleClass('mostrar');
+  
+    });
+  });
+};
+
 
 
