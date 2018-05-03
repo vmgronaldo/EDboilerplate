@@ -12,24 +12,32 @@ block main
           a(href="") Nacionales /
         li 
           a(href="") Chocolate Premiun   
-
+    div(class="border-cafe")
   section(class="detallep-main l-container")
     div(class="detallep-main__productos")
       div(class="detallep-main__productos__item")
         div(class="detallep-main__productos__item__imgdet")
-          img(src="img/producto-1.jpg", alt="")
+          img(src="img/prod-det.png", alt="")
         div(class="detallep-main__productos__item__infodet")
+          
           h1 American Black Coffee
           h3 S/ 14.00
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, explicabo. Dolorum veniam maiores atque et reiciendis cupiditate optio hic laudantium culpa? Perspiciatis fugiat repudiandae totam aut asperiores dicta, illo aspernatur.
-          button(class="button primary") Solicitar
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, explicabo. Dolorum veniam maiores atque et reiciendis cupiditate optio hic laudantium culpa? Perspiciatis fugiat repudiandae totam aut asperiores dicta, illo aspernatur.       
           div
-            span Categoria : Cafe
-            span Tag : Cacao
+            input(type="number" step="1" min="1" max="" name="" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric")
+            button(class="button primary") Solicitar
+          div
+            span Categoria: 
+              a(href="") Cafe
+              a(href="") Cacao
+              a(href="") Nutritivo
+            span Tag: 
+              a(href="") Nacional
+     
       div
         div(class="tab")
-          button(class="tablinks active"  onclick="tabs(event, 'descripcion')") London
-          button(class="tablinks" onclick="tabs(event, 'comentario')") Paris
+          button(class="tablinks active"  onclick="tabs(event, 'descripcion')") Descripcion
+          button(class="tablinks" onclick="tabs(event, 'comentario')") Comentario
 
           div(id="descripcion" style="display:block" class="tabcontent")
             br
@@ -78,3 +86,6 @@ block main
           a(href="") Categoria 
       div(class="producto-main__filtros__cotizador")
         h1 Cotizador          
+
+
+  include ../includes/relacionados.pug

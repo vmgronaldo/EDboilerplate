@@ -5,6 +5,7 @@ var _example = require("./modules/example");
 
 (0, _example.saludo)();
 (0, _example.despedida)();
+(0, _example.toggle)();
 
 },{"./modules/example":2}],2:[function(require,module,exports){
 'use strict';
@@ -21,6 +22,16 @@ var saludo = exports.saludo = function saludo() {
 
 var despedida = exports.despedida = function despedida() {
   console.log('Adiós mundo');
+};
+
+var toggle = exports.toggle = function toggle() {
+  $(function () {
+    var togglemenu = $('#toggle-menu');
+    var nav = $('#main-nav');
+    togglemenu.on('click', function () {
+      nav.add($('body')).toggleClass('mostrar');
+    });
+  });
 };
 
 },{}]},{},[1]);

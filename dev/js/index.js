@@ -1,4 +1,5 @@
-import {saludo, despedida} from "./modules/example";
+import {saludo, despedida,toggle} from "./modules/example";
 
 saludo();
 despedida();
+toggle();

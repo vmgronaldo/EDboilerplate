@@ -1,119 +1,92 @@
-.detallep-main{
+.detallep-main {
     display: grid;
     padding: 100px 0px;
+    background: url(../img/about-index-img.png) no-repeat;
+    background-size: 60%;
+    background-position: 5% 10%;
     @include desde($large) {
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
     }
-    &__filtros {
-   
-
-        grid-row-gap: 2em;
-          @include desde($large) {
-              width: 25%;
-              padding-right: 40px;
-          }
-     
-          &__categorias{
-  
-            h1{
-              color:$negro;
-              font-family: $titulos,sans-serif;
-              font-weight: bold;
-              font-size: 2em;
-              padding: 0px 0px 15px 10px;
-              margin: 0 0px 25px;
-              border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-              margin-top: 0px;
-  
-            }
-            ul{
-              list-style: none;
-              padding: 0px;
-              margin: 0px;
-              li{
-                padding: 0px;
-                margin: 0px;
-                margin-bottom: 13px;
-                vertical-align: middle;
-                line-height: 1;
-                i{
-                  color:$crema;
-                }
-                  a{
-                    color:$negro;
-                    font-family: $titulos,sans-serif;
-                    font-weight: bold;
-                    font-size: 1em;       
-                  text-decoration: none; 
-                  }
-              }
-            }
-  
-          }
-          &__tags{
-            h1{
-              color:$negro;
-              font-family: $titulos,sans-serif;
-              font-weight: bold;
-              font-size: 2em;
-              padding: 15px 0px 10px;
-              margin: 0 0px 25px;
-              border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-            }
-            div{     
-              display: flex;
-              flex-wrap: wrap;
-              margin: 26px 0 0 0px;
-                a{
-                  font-family: $titulos,sans-serif;
-                  display: inline;
-                  font-size: 1em;
-                  font-weight: bold;
-                  border-radius: 0px;
-                  background-clip: padding-box;
-                  color: rgba(0, 0, 0, 0.3);
-                  transition: all .3s ease;
-                  padding: 0 5px 5px 0px;
-  
-                  &::before{
-                    content:"#";
-                  }
-               
-                }
-              }
-            
-  
-          }
-          &__cotizador{
-            h1{
-              color:$negro;
-              font-family: $titulos,sans-serif;
-              font-weight: bold;
-              font-size: 2em;
-              padding: 15px 0px 10px;
-              margin: 0 0px 25px;
-              border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-            }
-          }
-      }
-      
-    &__productos{
-    @include desde($large) {
+    &__productos {
+        @include desde($large) {
             padding-left: 20px;
             width: 75%;
         }
-            &__item{
-                display:grid;
-                grid-template-columns: repeat(2,1fr);
+        &__item {
+            display: grid;
+            margin: 0 0 40px 0;
+            @include desde($x-large) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &__imgdet {
+              text-align: center;
+              img{
+                width: 50%;
+              }
+         
+          }
+            &__infodet {
+              h1,h3{
+                color:$negro;
+                font-family:$titulos,sans-serif;
+                font-size: 2em;
+                margin: 0px;
+              }
+              h3{
+              color:$crema;
+       
+              }
 
-                &__img{
+              p{
+                color:$negro;
+                font-family:$textos,sans-serif;
+                font-size: 1em;
+                margin: 0px;
+              }
+              button{
 
+              }
+              div{
+                margin: 20px 0;
+                display: grid;
+                grid-gap: 1em;
+                input{
+                  width: 20%;
+                  border: 1px solid #F6F6F6;            
+                  border-radius: 0px;
+                  background-clip: padding-box;
+                  outline: 0;
+                  height: 100%;
+                  padding: 10px ;
+                  font-size: 16px;
+                  font-weight: 400;
+                  text-align: center
                 }
-                &__infodet{
 
+                button{
+                  text-align: center !important;
+                  width: 100%;
+                  text-align: left;
+                  padding: 10px;
+                  line-height: 1.1 !important;
+                  @include desde($mediun) {
+                    width: 35%;
                 }
+                }
+                span{
+                  color:$negro;
+                  font-family:$titulosm,sans-serif;
+                  font-size: 1.2em;
+                  margin: 0px;
+                  a{
+                    color:$crema;          
+                    padding-right: 10px;
+                  }
+                }
+              }
             }
         }
+    }
 }

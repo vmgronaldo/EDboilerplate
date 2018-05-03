@@ -1,19 +1,94 @@
-.cd-header__nav{
-    ul{
-        font-family: $titulos,sans-serif;
-        font-size: 1em;
+.main-header {
+    background: $white;
+    padding: 20px 0;
+    border-bottom: 5px solid lighten($marron, 10);
+    .l-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
-        li{
+.logo {
+  width: 50%;
 
-            a{
-                transition: ease-in-out .25s;
-                color:$marron;
-                &:hover{
-                    color:$crema;
-                    transition: ease-in-out .25s
-                }
+@include desde($mediun) {
+  width: 25%;
+}
+}
 
-            }
+.icon-menu {
+    color: $marron;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: block;
+    @include desde($large) {
+        display: none;
+        float: right;
+    }
+}
+
+.main-nav {
+    background: $marron;
+    position: fixed;
+    top: 0;
+    right: -$offcanvas-width;
+    width: $offcanvas-width;
+    padding: 1em;
+    height: 100vh;
+    z-index: 200;
+    transition: all .3s;
+    &.mostrar {
+        right: 0;
+    }
+    @include desde($large) {
+      background: transparent;
+      width: 50%;
+      position:initial;
+
+      height: auto;
+    }
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include desde($large) {
+     display: flex;
+    }
+    &__item {
+        //border-bottom: 1px solid rgba($marron, .2);
+    }
+    &__link {
+      
+        color:$white;
+        line-height: 2;
+        display: block;
+        text-transform:capitalize;
+        font-family: $titulos;
+        font-weight: bold;
+        padding: 0 10px;
+        transition: ease-in-out .25s;
+        @include desde($large) {
+          color:$marron;
+      }
+        &:hover{
+          color:$crema;
+          transition: ease-in-out .25s;
+        }
+    }
+}
+
+//body canvas
+body {
+    position: relative;
+    right: 0;
+    transition: all .3s;
+    &.mostrar {
+        right: $offcanvas-width;
+        @include desde($large) {
+          right: 0;
         }
     }
 }
