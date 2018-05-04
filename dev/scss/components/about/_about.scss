@@ -23,7 +23,7 @@
             font-family: $titulos, sans-serif;
             font-size: 2.5em;
             @include desde($large) {
-                font-size: 4em;
+                font-size: 3em;
             }
         }
         ul {
@@ -34,7 +34,7 @@
             li {
                 display: inline-block;
                 margin: 0;
-                font-size: 18px;
+                font-size: 1em;
                 font-weight: bold;
                 padding-right: 5px;
                 a {

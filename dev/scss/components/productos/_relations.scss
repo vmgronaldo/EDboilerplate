@@ -1,0 +1,60 @@
+.relacionados {
+    padding: 0px 0 100px 0;
+    &__main {
+        h1{
+            color:$negro;
+            font-family:$titulos,sans-serif;
+            font-size: 1.6em;
+            margin: 10px 0;
+        }
+        &__item {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-gap: 1.5em;
+            @include desde($mediun) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include desde($x-large) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            div {
+                text-align: center;
+                padding: 20px;
+                border: 1px solid #f6f6f6;
+                text-align: center;
+                border-radius: 0;
+                background-clip: padding-box;
+                transition: all .3s ease;
+                &:hover {
+                    box-shadow: 0 0 10px rgba(146, 146, 146, .4);
+                    transition: all .3s ease;
+                }
+                a{
+                    img{
+                        max-width: 80%;
+                    }
+                    h1{
+                        color:$negro;
+                        font-family:$titulos,sans-serif;
+                        font-size: 1.4em;
+                        margin:  0;
+                    }
+                }
+
+                h3{
+                    color:$crema;
+                    font-family:$titulos,sans-serif;
+                    font-size: 1.4em;
+                    margin: 0px 0 20px 0;
+                }
+
+                button{
+                    line-height: 1 !important;
+                    padding: 10px 15px !important;
+                    font-size: 1em !important;
+                }
+            }
+        }
+    }
+}
