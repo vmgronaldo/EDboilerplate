@@ -1934,6 +1934,7 @@ body.mostrar{
 .blog-article__items__item article .cuerpo .cuerpo-meta img{
   width:50px;
   height:50px;
+  height:60px;
   border-radius:50%;
 }
 
@@ -2210,6 +2211,7 @@ body.mostrar{
 .blog-category-2__items__posts__post article .cuerpo .cuerpo-meta img{
   width:50px;
   height:50px;
+  height:60px;
   border-radius:50%;
 }
 
@@ -2300,6 +2302,7 @@ body.mostrar{
 .blog-category-3__items__row-1 div .cuerpo .cuerpo-meta img{
   width:50px;
   height:50px;
+  height:60px;
   border-radius:50%;
 }
 
@@ -2379,6 +2382,7 @@ body.mostrar{
 .blog-category-3__items__row-2 div article .cuerpo .cuerpo-meta img{
   width:50px;
   height:50px;
+  height:60px;
   border-radius:50%;
 }
 
