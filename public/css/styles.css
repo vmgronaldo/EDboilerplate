@@ -2398,6 +2398,206 @@ body.mostrar{
   grid-row-end:2;
 }
 
+.headabout-contacto{
+  background:url(../img/slider-01.jpg) no-repeat;
+  width:100%;
+  background-attachment:fixed;
+  overflow:hidden;
+  padding:20px 0;
+  margin:0;
+  min-height:200px;
+  text-align:center;
+  position:relative;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+}
+
+@media screen and (min-width:1024px){
+  .headabout-contacto{
+    min-height:400px;
+    padding:50px 0;
+    text-align:left;
+  }
+}
+
+.headabout-contacto__main h1{
+  margin:0;
+  color:#f4f4f4;
+  font-family:bold,sans-serif;
+  font-size:2.5em;
+}
+
+@media screen and (min-width:1024px){
+  .headabout-contacto__main h1{
+    font-size:3em;
+  }
+}
+
+.headabout-contacto__main ul{
+  list-style:none;
+  margin:10px 0 5px;
+  padding:0;
+  display:block;
+}
+
+.headabout-contacto__main ul li{
+  display:inline-block;
+  margin:0;
+  font-size:1em;
+  font-weight:700;
+  padding-right:5px;
+}
+
+.headabout-contacto__main ul li a{
+  color:#f4f4f4;
+  cursor:pointer;
+}
+
+.border-cafe{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  z-index:1;
+  text-align:center;
+  height:50px;
+  background:url(../img/border.png) no-repeat;
+  background-size:cover;
+}
+
+.contactanos__main{
+  display:-ms-grid;
+  display:grid;
+  grid-gap:2%;
+  padding:80px 0;
+}
+
+@media screen and (min-width:768px){
+  .contactanos__main{
+    -ms-grid-columns:49% 49%;
+        grid-template-columns:49% 49%;
+  }
+}
+
+.contactanos__main__info{
+  padding:40px 20px;
+}
+
+.contactanos__main__info h1{
+  padding:0;
+  margin:0;
+  font-size:2em;
+  font-family:bold,sans-serif;
+}
+
+.contactanos__main__info p{
+  padding:0;
+  margin:0;
+  padding:20px 0;
+  font-family:regular,sans-serif;
+}
+
+.contactanos__main__info ul{
+  list-style:none;
+  padding:40px 0;
+  margin:0;
+}
+
+.contactanos__main__info ul li{
+  font-size:1.1em;
+  font-family:regular,sans-serif;
+  padding:10px 0;
+  width:60%;
+}
+
+.contactanos__main__info ul li i{
+  font-size:1.3em;
+  font-family:bold,sans-serif;
+  padding-right:5px;
+}
+
+.contactanos__main__portada{
+  background:url(../img/contact-bg.png) no-repeat;
+  width:100%;
+}
+
+.contactanos__main__portada .cuerpo div{
+  margin:30px;
+  border:8px solid #fff;
+  padding:40px 20px;
+  color:#f4f4f4;
+}
+
+.contactanos__main__portada .cuerpo div h1{
+  font-size:2em;
+  text-align:center;
+  font-family:bold,sans-serif;
+}
+
+.contactanos__main__portada .cuerpo div ul{
+  list-style:none;
+  padding:20px 0;
+  margin:0;
+}
+
+.contactanos__main__portada .cuerpo div ul li{
+  font-size:1.2em;
+  font-family:light,sans-serif;
+  padding:5px 0;
+}
+
+.contactanos__main__form{
+  padding:40px 0;
+}
+
+.contactanos__main__form form{
+  display:-ms-grid;
+  display:grid;
+}
+
+.contactanos__main__form form label{
+  font-size:1.2em;
+  font-family:bold,sans-serif;
+}
+
+.contactanos__main__form form input,.contactanos__main__form form textarea{
+  background:#f4f4f4;
+  padding:10px 20px;
+  border:0;
+  outline:0;
+  font-family:regular,sans-serif;
+}
+
+.contactanos__main__form form textarea{
+  height:200px;
+  margin-bottom:20px;
+}
+
+.contactanos__main__form form button{
+  width:30%;
+}
+
+.planificar__main h1{
+  font-size:1.5em;
+  font-family:bold,sans-serif;
+}
+
+.planificar__main h3{
+  font-size:1.2em;
+  font-family:bold,sans-serif;
+}
+
+.planificar__main p{
+  font-family:regular,sans-serif;
+}
+
+.planificar__main strong{
+  font-family:bold,sans-serif;
+}
+
 .proyectos-article{
   padding:50px 0;
 }
