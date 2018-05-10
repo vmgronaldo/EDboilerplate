@@ -44,3 +44,28 @@
         }
     }
 }
+
+.post-detalle{
+
+  .post-main{
+    display: grid;
+    grid-template-columns: 62.5% 32.5%;
+    grid-gap: 5%;
+
+    &__detalle{
+
+    }
+
+
+    &__filtro{
+      position: fixed;
+      left: 914.375px;
+      top: 0px;
+      width: 285px;
+      margin-left: 0px;
+      padding: 0px 15px;
+      margin-top: 0px;
+      z-index: 1;
+    }
+  }
+}

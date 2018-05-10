@@ -2,6 +2,7 @@
     font-size: 1.2em;
     transition: all .25s;
     font-family: $titulos, sans-serif;
+    border-radius: 8px;
     &.primary {
         background: $crema;
         color: $negro;
@@ -42,8 +43,8 @@
     padding: 5px;
     display: inline-block;
     letter-spacing: 1px;
-    line-height: 1.6;
-    border-radius: 50px;
+    line-height: 1.7;
+    border-radius: 8px;
     text-decoration: none;
     &.primary {
         background: $crema;

@@ -8,7 +8,8 @@ position: relative !important;
   
 
 .nosotros-main {
-    margin: 0px 0px;
+  padding: 80px 0 50px 0px;
+   /*  margin: 0px 0px;
     padding: 30px 0;
     @include desde($mediun) {
         margin: 0px 0px;
@@ -77,8 +78,8 @@ position: relative !important;
             font-family: $titulos, sans-serif;
             color: $negro;
             font-size: 1.5em;
-        }
-    }
+        } */
+    
     &__service {
         //margin: 30px 0;
         &__items {
@@ -86,10 +87,14 @@ position: relative !important;
             text-align: left;
             @include desde($mediun) {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-column-gap: 2em;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 2em;
                 text-align: left;
             }
+            @include desde($large) {
+      
+              grid-template-columns: repeat(4,1fr);
+          }
             &__item {
                 margin-top: 50px;
                 @include desde($mediun) {

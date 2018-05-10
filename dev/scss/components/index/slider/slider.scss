@@ -4,8 +4,14 @@
             .carousel-item {
            
                 img {
+                  object-fit: cover;
+                  height: 400px;
+                  @include desde($mediun) {
+                    object-fit: none;
+                    height: 500px;
              
-                    object-fit: cover;
+                }
+                
                  
                 }
             }
@@ -43,7 +49,7 @@
         padding: 0px;
         font-family:$titulos, sans-serif;
         div{
-          padding: 15px 0 0 0;
+          padding: 0px 0 0 0;
         }
         h1{
           font-size: 2em;
@@ -54,7 +60,7 @@
           background: $marron;
           color:$white;
           text-decoration: none;
-          border-radius: 10px;
+        
           margin: 0 0 10px 0;
      
         }
