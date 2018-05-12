@@ -1,6 +1,6 @@
 extends ../includes/template
 block main
-  section(class="detalle-portada" style="background-image: url('img/selva-5.jpeg')" )
+  section(class="detalle-portada" id="detalle-blog" style="background-image: url('img/selva-5.jpeg')" )
     div(class="l-container")
       div(class="info-main")
         div(class="info")
@@ -94,25 +94,29 @@ block main
      
 
        
-        div(class="post-main__filtro")
+        div(class="post-main__filtro " id="filtro")
           div(class="search")
-            input(type="text" value="Buscar Post")
+            input(type="text" placeholder="Buscar contenido ")
           div(class="post-main-recientes")
             h1 Publicaciones Recientes
-            div(class="recientes main")
+            div(class="recientes-main")
               div
-                img(src="img/blog/blog-5.jpg", alt="")
-                h3 In ultricies nunc ut mi finibus congue porttitor vec
+                a(href="")
+                  img(src="img/blog/blog-5.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
               div
-                img(src="img/blog/blog-3.jpg", alt="")
-                h3 In ultricies nunc ut mi finibus congue porttitor vec
+                a(href="")
+                  img(src="img/blog/blog-3.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
               div
-                img(src="img/blog/blog-2.jpg", alt="")
-                h3 In ultricies nunc ut mi finibus congue porttitor vec
+                a(href="")
+                  img(src="img/blog/blog-2.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
               div
-                img(src="img/blog/blog-1.jpg", alt="")
-                h3 In ultricies nunc ut mi finibus congue porttitor vec
-           
+                a(href="")
+                  img(src="img/blog/blog-1.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
+            
 
       
         

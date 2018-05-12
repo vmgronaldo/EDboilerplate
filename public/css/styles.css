@@ -184,7 +184,7 @@ img,video{
   width:12em;
   padding:1em;
   height:100vh;
-  z-index:3;
+  z-index:4;
   transition:all .3s;
 }
 
@@ -869,6 +869,7 @@ body.mostrar{
   width:100%;
   background:#242424;
   position:relative;
+  z-index:5;
 }
 
 .footer-main__content{
@@ -1684,7 +1685,7 @@ body.mostrar{
 }
 
 .slider-index-main .carousel .carousel-indicators{
-  z-index:4;
+  z-index:6;
 }
 
 .slider-index-main .border-slider{
@@ -2383,9 +2384,14 @@ body.mostrar{
 .post-detalle .post-main{
   display:-ms-grid;
   display:grid;
-  -ms-grid-columns:62.5% 32.5%;
-      grid-template-columns:62.5% 32.5%;
-  grid-gap:5%;
+}
+
+@media screen and (min-width:1024px){
+  .post-detalle .post-main{
+    -ms-grid-columns:62.5% 32.5%;
+        grid-template-columns:62.5% 32.5%;
+    grid-gap:5%;
+  }
 }
 
 .post-detalle .post-main__detalle .detalle-head{
@@ -2501,16 +2507,18 @@ body.mostrar{
   transition:.3s;
 }
 
-.post-detalle .post-main__detalle .detalle-footer{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack:justify;
-      -ms-flex-pack:justify;
-          justify-content:space-between;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
+@media screen and (min-width:1024px){
+  .post-detalle .post-main__detalle .detalle-footer{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+  }
 }
 
 .post-detalle .post-main__detalle .detalle-footer img{
@@ -2539,9 +2547,21 @@ body.mostrar{
   padding:50px 0;
   display:-ms-grid;
   display:grid;
-  -ms-grid-columns:(1fr)[3];
-      grid-template-columns:repeat(3,1fr);
   grid-gap:1em;
+}
+
+@media screen and (min-width:768px){
+  .post-detalle .post-main__detalle .post-relacionados{
+    -ms-grid-columns:(1fr)[2];
+        grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width:1024px){
+  .post-detalle .post-main__detalle .post-relacionados{
+    -ms-grid-columns:(1fr)[3];
+        grid-template-columns:repeat(3,1fr);
+  }
 }
 
 .post-detalle .post-main__detalle .post-relacionados div article{
@@ -2593,6 +2613,81 @@ body.mostrar{
 
 .post-detalle .post-main__detalle .post-relacionados div .cuerpo span{
   padding-right:10px;
+}
+
+.post-detalle .post-main__filtro{
+  transition:all 1s;
+  left:860px;
+  top:0;
+  width:285px;
+  padding:0 15px;
+  z-index:3;
+}
+
+.post-detalle .post-main__filtro .search{
+  width:100%;
+  padding-bottom:20px;
+}
+
+.post-detalle .post-main__filtro .search input{
+  width:100%;
+  padding:15px 0;
+  border:none;
+  border-bottom:2px solid #cecece;
+  transition:.5s;
+  outline:none;
+}
+
+.post-detalle .post-main__filtro .search input:focus{
+  outline:none;
+  border-bottom:2px solid #141414;
+  transition:.5s;
+}
+
+.post-detalle .post-main__filtro .post-main-recientes h1{
+  font-family:bold,sans-serif;
+}
+
+.post-detalle .post-main__filtro .post-main-recientes .recientes-main{
+  display:-ms-grid;
+  display:grid;
+  padding:10px 0;
+  grid-gap:1em;
+}
+
+@media screen and (min-width:768px){
+  .post-detalle .post-main__filtro .post-main-recientes .recientes-main{
+    -ms-grid-columns:(1fr)[2];
+        grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width:1024px){
+  .post-detalle .post-main__filtro .post-main-recientes .recientes-main{
+    -ms-grid-columns:(1fr)[1];
+        grid-template-columns:repeat(1,1fr);
+  }
+}
+
+.post-detalle .post-main__filtro .post-main-recientes .recientes-main div a{
+  color:#000;
+  transition:.25s ease-in;
+}
+
+.post-detalle .post-main__filtro .post-main-recientes .recientes-main div a img{
+  background:#000;
+  border-radius:10px;
+  box-shadow:0 22px 50px -24px rgba(0,0,0,.6);
+}
+
+.post-detalle .post-main__filtro .post-main-recientes .recientes-main div a h3{
+  font-family:bold,sans-serif;
+  padding:15px 0;
+}
+
+.post-detalle .post-main__filtro .post-main-recientes .recientes-main div a:hover{
+  color:#404040;
+  transition:.25s ease-in;
 }
 
 .headabout-contacto{

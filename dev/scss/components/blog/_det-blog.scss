@@ -49,8 +49,12 @@
   padding: 50px 0;
   .post-main {
     display: grid;
-    grid-template-columns: 62.5% 32.5%;
-    grid-gap: 5%;
+ 
+    @include desde($large) {
+      grid-template-columns: 62.5% 32.5%;
+      grid-gap: 5%;
+     
+    }
     &__detalle {
       .detalle-head {
         width: 100%;
@@ -145,9 +149,14 @@
         }
       }
       .detalle-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  
+        @include desde($large) {
+          display: flex;
+        
+          justify-content: space-between;
+          align-items: center;
+         
+        }
         img {
           margin-right: 32px;
           float: left;
@@ -170,19 +179,24 @@
       .post-relacionados {
         padding: 50px 0;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
+        @include desde($mediun) {
+          grid-template-columns: repeat(2, 1fr);
+               
+        }
+        @include desde($large) {
+          grid-template-columns: repeat(3, 1fr);
+               
+        }
         div {
           article {
             background-color: #000000;
             border-radius: 8px;
             position: relative;
-          
             filter: brightness(70%);
             &:hover {
               box-shadow: 0px 8px 11px -6px rgba(0, 0, 0, 0.5);
               filter: brightness(100%);
-            
             }
             a {
               img {
@@ -221,14 +235,70 @@
       }
     }
     &__filtro {
-      // position: fixed;
-      // left: 914.375px;
-      // top: 0px;
-      // width: 285px;
-      // margin-left: 0px;
-      // padding: 0px 15px;
-      // margin-top: 0px;
-      // z-index: 1;
+      //position: fixed;
+      transition: all 1s;
+      left: 860px;
+      top: 0px;
+      width: 285px;
+      //margin-left: 0px;
+      padding: 0px 15px;
+      //margin-top: 0px;
+      z-index: 99;
+
+      .search {
+        width: 100%;
+        padding-bottom: 20px;
+        input {
+          width: 100%;
+          padding: 15px 0px;
+          border: none;
+          border-bottom: 2px solid #cecece;
+          transition: 0.5s;
+          outline: none;
+          &:focus {
+            outline: none;
+            border-bottom: 2px solid #141414;
+            transition: 0.5s;
+          }
+        }
+      }
+      .post-main-recientes {
+        h1 {
+          font-family: $titulos, sans-serif;
+        }
+        .recientes-main {
+          display:grid;
+          padding: 10px 0;
+          grid-gap: 1em;
+          @include desde($mediun) {
+            grid-template-columns: repeat(2, 1fr);
+                 
+          }
+          @include desde($large) {
+            grid-template-columns: repeat(1, 1fr);
+                 
+          }
+          div {
+            a{
+              color:black;
+              transition: ease-in .25s;
+            img {
+              background: #000;
+              border-radius: 10px;
+              box-shadow: 0 22px 50px -24px rgba(0, 0, 0, .6);
+            }
+            h3 {
+              font-family: $titulos, sans-serif;
+              padding: 15px 0;
+            }
+            &:hover{
+              color:lighten(black, 25);
+              transition: ease-in .25s;
+            }
+          }
+          }
+        }
+      }
     }
   }
 }
