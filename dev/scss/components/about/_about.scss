@@ -1,252 +1,327 @@
 .headabout {
-    background: url(../img/about-parrallax.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50%;
-    overflow: hidden;
-    padding: 20px 0;
-    margin: 0;
-    min-height: 150px;
+  background: url(../img/about-parrallax.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding: 20px 0;
+  margin: 0;
+  min-height: 150px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  @include desde($large) {
+    min-height: 300px;
+    padding: 50px 0;
+    text-align: left;
+  }
+  &__main {
+    h1 {
+      margin: 0;
+      color: $white;
+      font-family: $titulos, sans-serif;
+      font-size: 1.2em;
+      @include desde($large) {
+        font-size: 3em;
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 10px 0 5px 0;
+      padding: 0;
+      display: block;
+      li {
+        display: inline-block;
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
+        padding-right: 5px;
+        a {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .border-cafe {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
     text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    @include desde($large) {
-        min-height: 300px;
-        padding: 50px 0;
-        text-align: left;
-    }
-    &__main {
-        h1 {
-            margin: 0;
-            color: $white;
-            font-family: $titulos, sans-serif;
-            font-size: 2.5em;
-            @include desde($large) {
-                font-size: 3em;
-            }
-        }
-        ul {
-            list-style: none;
-            margin: 10px 0 5px 0;
-            padding: 0;
-            display: block;
-            li {
-                display: inline-block;
-                margin: 0;
-                font-size: 1em;
-                font-weight: bold;
-                padding-right: 5px;
-                a {
-                    color: $white;
-                    cursor: pointer;
-                }
-            }
-        }
-      
-    }
-    .border-cafe {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      z-index: 2;
-      text-align: center;
-      height: 50px;
-      background: url(../img/border.png)no-repeat;
-      background-size: cover;
-    }
+    height: 50px;
+    background: url(../img/border.png)no-repeat;
+    background-size: cover;
+  }
 }
 
 .historia-main {
-    padding: 50px 0;
-    display: grid;
-    grid-row-gap: 2em;
-    @include desde($large) {
-        padding: 100px 0;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em;
+  padding: 50px 0;
+  display: grid;
+  grid-row-gap: 2em;
+  // @include desde($large) {
+  //   padding: 100px 0;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-gap: 3em;
+  // }
+  &__info {
+   
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      font-family: $titulos, sans-serif;
+      color: $crema;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 0;
+   
+      @include desde($mediun) {
+        font-size: 2em;
+      }
     }
-    &__info {
-        h3 {
-            font-family: $titulos, sans-serif;
-            color: $crema;
-            font-weight: bold;
-            font-size: 1.2em;
-            margin: 0;
-            @include desde($mediun) {
-                font-size: 2em;
-            }
-        }
-        h1 {
-            font-family: $titulos, sans-serif;
-            color: $negro;
-            font-weight: bold;
-            font-size: 2em;
-            margin: 0;
-            @include desde($mediun) {
-                font-size: 3.5em;
-            }
-        }
-        p {
-            width: 100%;
-            font-family: $textosr, sans-serif;
-            font-size: 1em;
-            font-weight: 400;
-            line-height: 30px;
-            color: #242424;
-            margin: 0;
-            @include desde($mediun) {
-                font-size: 1.1em;
-                line-height: 36px;
-            }
-        }
+    h1 {
+      font-family: $titulos, sans-serif;
+      color: $negro;
+      font-weight: bold;
+      font-size: 2em;
+      margin: 0;
+      @include desde($mediun) {
+        font-size: 3.5em;
+      }
     }
-    &__video {
-        a {
-            z-index: 10;
-            text-align: center;
-            position: relative;
-            display: block;
-            &::after {
-                transition: all .3s ease;
-                top: 50%;
-                left: 50%;
-                position: absolute;
-                -webkit-transform: translate(-50%, -50%);
-                -moz-transform: translate(-50%, -50%);
-                -o-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAXCAYAAADtNKTnAAAAkUlEQ…zjXzrpZCYvbATbaTDT1cVGv9NiL/jiOE+iZIsz9ixM+w8NCRTEgm80aQAAAABJRU5ErkJggg==) 50% 50% no-repeat;
-                display: block;
-                content: "";
-                width: 84px;
-                height: 84px;
-                -webkit-border-radius: 50%;
-                -webkit-background-clip: padding-box;
-                -moz-border-radius: 50%;
-                -moz-background-clip: padding;
-                border-radius: 50%;
-                background-clip: padding-box;
-                background-color: #b01813;
-                border: 12px solid rgba(255, 255, 255, .3);
-            }
-            &:hover:after {
-                border-color: rgba(255, 255, 255, .8);
-            }
-        }
-        p {
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            font-family: kanit;
-            font-weight: bold;
-            letter-spacing: 2px;
-            padding-top: 50px;
-            font-size: 1.2em;
-        }
+    p {
+      width: 100%;
+      font-family: $textosr, sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 30px;
+      color: #242424;
+      margin: 15px 0;
+      @include desde($mediun) {
+        font-size: 1.3em;
+        line-height: 36px;
+      }
     }
+  }
+  &__video {
+    a {
+      z-index: 10;
+      text-align: center;
+      position: relative;
+      display: block;
+
+      img{
+        width: 80%;
+        height: 500px;
+      }
+      &::after {
+        transition: all .3s ease;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAXCAYAAADtNKTnAAAAkUlEQ…zjXzrpZCYvbATbaTDT1cVGv9NiL/jiOE+iZIsz9ixM+w8NCRTEgm80aQAAAABJRU5ErkJggg==) 50% 50% no-repeat;
+        display: block;
+        content: "";
+        width: 84px;
+        height: 84px;
+        -webkit-border-radius: 50%;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 50%;
+        -moz-background-clip: padding;
+        border-radius: 50%;
+        background-clip: padding-box;
+        background-color: #b01813;
+        border: 12px solid rgba(255, 255, 255, .3);
+      }
+      &:hover:after {
+        border-color: rgba(255, 255, 255, .8);
+      }
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: kanit;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding-top: 50px;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .foda-main {
-    display: grid;
-    padding: 0 0 80px 0;
-    grid-row-gap: 2em;
-    @include desde($mediun) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em;
+  display: grid;
+  padding: 0 0 80px 0;
+  text-align: center;
+  grid-gap: 2em;
+
+  @include desde($large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item {
+    img {}
+    h1 {
+      font-family: $titulos, sans-serif;
+      color: $negro;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin: 0;
     }
-    @include desde($large) {
-        grid-template-columns: repeat(4, 1fr);
+    p {
+      font-family: $textosr, sans-serif;
+      color: $negro;
+      font-weight: 500;
+      font-size: 1.1em;
+      margin: 10px 0px;
     }
-    &__item {
-        img {}
-        h1 {
-            font-family: $titulos, sans-serif;
-            color: $negro;
-            font-weight: bold;
-            font-size: 1.5em;
-            margin: 0;
-        }
-        p {
-            font-family: $textosr, sans-serif;
-            color: $negro;
-            font-weight: 500;
-            font-size: .9em;
-            margin: 10px 0px;
-        }
-    }
+  }
 }
 
 .team-main {
-    //background: url(../img/parrallax-team.jpg) no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    overflow: hidden;
-    padding: 20px 0;
-    margin: 0;
-    min-height: 150px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
-    &__content {
-        &__info {
-            font-family: $titulos, sans-serif;
-            margin: 0 0 30px 0;
-            line-height: 1;
-            h3 {
-                color: $crema;
-                font-size: 2em;
-                margin: 0px;
-            }
-            h1 {
-                margin: 0px;
-                color: $white;
-                font-size: 3.5em;
-            }
-        }
-        &__team {
-            display: grid;
-            grid-row-gap: 2em;
-            @include desde($mediun) {
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 2em;
-            }
-            @include desde($x-large) {
-                grid-template-columns: repeat(4, 1fr);
-                grid-gap: 2em;
-            }
-            &__item {
-                border: 4px solid $crema;
-                padding: 30px 10px;
-                color: black;
-                div {
-                    img {
-                        border-radius: 50%;
-                        width: 200px;
-                        height: 200px;
-                        margin: 0 auto; //padding: 0 20px;
-                    }
-                }
-                h1 {
-                    font-family: $titulos, sans-serif;
-                    color: $crema;
-                    font-size: 1.5em;
-                    letter-spacing: 2px;
-                    margin: 0px;
-                }
-                p {
-                    font-family: $textos, sans-serif;
-                    font-size: .9em;
-                    margin: 5px 0;
-                }
-                span {
-                    font-family: $titulos, sans-serif;
-                    letter-spacing: 2px;
-                }
-            }
-        }
+  //background: url(../img/parrallax-team.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding: 20px 0;
+  margin: 0;
+  min-height: 150px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  &__content {
+    &__info {
+      font-family: $titulos, sans-serif;
+      margin: 0 0 30px 0;
+      line-height: 1;
+      h3 {
+        color: $crema;
+        font-size: 2.2em;
+        margin: 0px;
+      }
+      h1 {
+        margin: 0px;
+        color: $marron;
+        font-size: 3.5em;
+      }
     }
+    &__team {
+      display: grid;
+      grid-row-gap: 2em;
+  
+      @include desde($mediun) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+
+      }
+      @include desde($x-large) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2em;
+   
+      }
+      &__item {
+        border: 4px solid $crema;
+        color: black;
+        div {
+          img {
+            //border-radius: 50%;
+            width: 100%;
+            margin: 0 auto; //padding: 0 20px;
+          }
+        }
+        h1 {
+          font-family: $titulos, sans-serif;
+          color: $crema;
+          font-size: 1.5em;
+          letter-spacing: 2px;
+          margin: 0px;
+        }
+        p {
+          font-family: $textos, sans-serif;
+          font-size: .9em;
+          margin: 5px 0;
+        }
+        span {
+          font-family: $titulos, sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+.tarjeta {
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  background: #F29720;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+
+.adelante,
+.atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.atras h3{
+font-family:$titulos, serif;
+font-size: 1.5em;
+  color:$marron;
+
+}
+.atras p{
+  font-family:$textosr, serif;
+  font-size: 1.1em;
+
+  }
+.adelante {
+  width: 100%;
+}
+
+.atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+  background: #F29720;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.name{
+  padding: 10px 0;
+  h1{
+    margin: 0;
+  }
 }
