@@ -1,3 +1,24 @@
+.search{
+  width: 100%;
+
+  div{
+
+    input{
+      width: 100%;
+      padding: 15px 0;
+      border: none;
+      border-bottom: 2px solid #cecece;
+      transition: .5s;
+      outline: none;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid #141414;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
 .headabout {
   background: url(../img/about-parrallax.jpg) no-repeat;
   background-attachment: fixed;
@@ -59,24 +80,26 @@
 .historia-main {
   padding: 50px 0;
   display: grid;
-  grid-row-gap: 2em;
-  // @include desde($large) {
+  grid-row-gap: 2em; // @include desde($large) {
   //   padding: 100px 0;
   //   grid-template-columns: repeat(2, 1fr);
   //   grid-gap: 3em;
   // }
   &__info {
-   
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
+    @include desde($large) {
+      width: 70%;
+      margin: 0 auto;
+      
+    }
+
     h3 {
       font-family: $titulos, sans-serif;
       color: $crema;
       font-weight: bold;
       font-size: 1.2em;
       margin: 0;
-   
       @include desde($mediun) {
         font-size: 2em;
       }
@@ -111,10 +134,11 @@
       text-align: center;
       position: relative;
       display: block;
-
-      img{
-        width: 80%;
-        height: 500px;
+      img {
+        @include desde($mediun) {
+          width: 80%;
+          height: 500px;
+        }
       }
       &::after {
         transition: all .3s ease;
@@ -162,7 +186,6 @@
   padding: 0 0 80px 0;
   text-align: center;
   grid-gap: 2em;
-
   @include desde($large) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -206,27 +229,32 @@
       h3 {
         color: $crema;
         font-size: 2.2em;
+        font-size: 1.2em;
         margin: 0px;
+        @include desde($mediun) {
+        
+          font-size: 2.2em;
+        }
       }
       h1 {
         margin: 0px;
         color: $marron;
-        font-size: 3.5em;
+        font-size:2em;
+        @include desde($mediun) {
+          font-size: 3.5em;
+        }
       }
     }
     &__team {
       display: grid;
       grid-row-gap: 2em;
-  
       @include desde($mediun) {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2em;
-
       }
       @include desde($x-large) {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2em;
-   
       }
       &__item {
         border: 4px solid $crema;
@@ -284,17 +312,18 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.atras h3{
-font-family:$titulos, serif;
-font-size: 1.5em;
-  color:$marron;
 
+.atras h3 {
+  font-family: $titulos, serif;
+  font-size: 1.5em;
+  color: $marron;
 }
-.atras p{
-  font-family:$textosr, serif;
-  font-size: 1.1em;
 
-  }
+.atras p {
+  font-family: $textosr, serif;
+  font-size: 1.1em;
+}
+
 .adelante {
   width: 100%;
 }
@@ -304,9 +333,8 @@ font-size: 1.5em;
   transform: rotateY(180deg);
   padding: 15px;
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
-
   align-items: center;
   text-align: center;
   color: #fff;
@@ -319,9 +347,73 @@ font-size: 1.5em;
   transform: rotateY(180deg);
 }
 
-.name{
+.name {
   padding: 10px 0;
-  h1{
+  h1 {
     margin: 0;
+  }
+}
+
+.history-main {
+  h1 {
+    color: #242424;
+    font-family: $titulos, serif;
+    margin: 20px 0;
+  }
+  .descripcion {
+    display: grid;
+
+    grid-gap: 2em;
+    @include desde($large) {
+
+      grid-template-columns: 1fr 1fr;
+    }
+    div {
+      p {
+        font-family: $textosr, serif;
+        font-size: 1.1em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+.filosofia-main {
+  padding: 50px 0 0 0;
+  h1 {
+    color: #242424;
+    font-family: $titulos, serif;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: 20px 0;
+    @include desde($large) {
+
+      width: 50%;
+    }
+  }
+  .descripcion {
+    display: grid;
+    grid-gap: 2%;
+    @include desde($large) {
+
+      grid-template-columns: 40% 58%;
+
+    }
+    div {
+
+      p {
+        font-family: $textosr, serif;
+        font-size: 1.1em;
+        line-height: 1.5em;
+      }
+    
+    }
+    .back-photo {
+      width: 100%;
+      background: url(../img/selva-1.jpeg) no-repeat;
+      background-size: cover;
+ 
+
+    }
   }
 }

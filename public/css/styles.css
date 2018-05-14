@@ -975,6 +975,25 @@ body.mostrar{
   margin:0 auto;
 }
 
+.search{
+  width:100%;
+}
+
+.search div input{
+  width:100%;
+  padding:15px 0;
+  border:none;
+  border-bottom:2px solid #cecece;
+  transition:.5s;
+  outline:none;
+}
+
+.search div input:focus{
+  outline:none;
+  border-bottom:2px solid #141414;
+  transition:.5s;
+}
+
 .headabout{
   background:url(../img/about-parrallax.jpg) no-repeat;
   background-attachment:fixed;
@@ -1054,9 +1073,15 @@ body.mostrar{
 }
 
 .historia-main__info{
-  width:70%;
-  margin:0 auto;
+  width:100%;
   text-align:center;
+}
+
+@media screen and (min-width:1024px){
+  .historia-main__info{
+    width:70%;
+    margin:0 auto;
+  }
 }
 
 .historia-main__info h3{
@@ -1111,9 +1136,11 @@ body.mostrar{
   display:block;
 }
 
-.historia-main__video a img{
-  width:80%;
-  height:500px;
+@media screen and (min-width:768px){
+  .historia-main__video a img{
+    width:80%;
+    height:500px;
+  }
 }
 
 .historia-main__video a:after{
@@ -1211,13 +1238,26 @@ body.mostrar{
 .team-main__content__info h3{
   color:#c0aa83;
   font-size:2.2em;
+  font-size:1.2em;
   margin:0;
+}
+
+@media screen and (min-width:768px){
+  .team-main__content__info h3{
+    font-size:2.2em;
+  }
 }
 
 .team-main__content__info h1{
   margin:0;
   color:#44200e;
-  font-size:3.5em;
+  font-size:2em;
+}
+
+@media screen and (min-width:768px){
+  .team-main__content__info h1{
+    font-size:3.5em;
+  }
 }
 
 .team-main__content__team{
@@ -1339,6 +1379,74 @@ body.mostrar{
 
 .name h1{
   margin:0;
+}
+
+.history-main h1{
+  color:#242424;
+  font-family:bold,serif;
+  margin:20px 0;
+}
+
+.history-main .descripcion{
+  display:-ms-grid;
+  display:grid;
+  grid-gap:2em;
+}
+
+@media screen and (min-width:1024px){
+  .history-main .descripcion{
+    -ms-grid-columns:1fr 1fr;
+        grid-template-columns:1fr 1fr;
+  }
+}
+
+.history-main .descripcion div p{
+  font-family:regular,serif;
+  font-size:1.1em;
+  line-height:1.5em;
+}
+
+.filosofia-main{
+  padding:50px 0 0;
+}
+
+.filosofia-main h1{
+  color:#242424;
+  font-family:bold,serif;
+  margin-bottom:10px;
+  width:100%;
+  margin:20px 0;
+}
+
+@media screen and (min-width:1024px){
+  .filosofia-main h1{
+    width:50%;
+  }
+}
+
+.filosofia-main .descripcion{
+  display:-ms-grid;
+  display:grid;
+  grid-gap:2%;
+}
+
+@media screen and (min-width:1024px){
+  .filosofia-main .descripcion{
+    -ms-grid-columns:40% 58%;
+        grid-template-columns:40% 58%;
+  }
+}
+
+.filosofia-main .descripcion div p{
+  font-family:regular,serif;
+  font-size:1.1em;
+  line-height:1.5em;
+}
+
+.filosofia-main .descripcion .back-photo{
+  width:100%;
+  background:url(../img/selva-1.jpeg) no-repeat;
+  background-size:cover;
 }
 
 .producto-main{
@@ -1740,9 +1848,7 @@ body.mostrar{
 
 @media screen and (min-width:768px){
   .slider-index-main .carousel .carousel-inner .carousel-item img{
-    -o-object-fit:none;
-       object-fit:none;
-    height:500px;
+    height:auto;
   }
 }
 

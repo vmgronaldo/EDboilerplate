@@ -7,8 +7,8 @@
                   object-fit: cover;
                   height: 400px;
                   @include desde($mediun) {
-                    object-fit: none;
-                    height: 500px;
+                    //object-fit: none;
+                  height: auto;
              
                 }
                 
