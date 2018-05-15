@@ -104,6 +104,14 @@
         font-size: 2em;
         margin-bottom: 30px;
     }
+    &__main{
+      display: grid;
+      grid-gap: 2em;
+      @include desde($large) {
+        grid-template-columns: repeat(2, 70% 30%);
+             
+    }
+  
     &__items {
         display: grid;
         @include desde($mediun) {
@@ -167,6 +175,10 @@
             }
         }
     }
+    &__filtro{
+          
+    }
+  }
 }
 
 .blog-category-2 {
@@ -393,6 +405,9 @@
                 }
             }
         }
+
+      
+
         &__row-2 {
           display: grid;
           @include desde($mediun) {

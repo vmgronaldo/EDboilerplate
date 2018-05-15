@@ -51,8 +51,7 @@
         color: $negro;
         transition: all .25s;
         &:hover {
-            background: $negro;
-            color: $white;
+            background: darken($crema, 10);
             transition: all .25s;
             text-decoration: none;
         }

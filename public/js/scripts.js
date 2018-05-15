@@ -42,7 +42,7 @@ var fixed = exports.fixed = function fixed() {
       var windowHeight = $(window).scrollTop();
       var contenido2 = $("#filtro").offset();
       contenido2 = contenido2.top;
-      console.log(windowHeight);
+      //console.log(windowHeight)
       if (windowHeight >= 550) {
 
         $("#filtro").css("position", "fixed");

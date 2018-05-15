@@ -1,0 +1,26 @@
+.paginador-main{
+  
+
+  .pagination{
+    .page-item{
+      //padding:0px 5px; 
+      .page-link{
+        font-family: $titulos,sans-serif;
+        color:black;
+        padding: 15px;
+ 
+
+      }
+    }
+  }
+}
+.page-item.active .page-link{
+  border:none;
+ background: $crema;
+}
+.page-link:focus {
+  z-index: 2;
+  outline: none;
+  box-shadow: none;
+}
+

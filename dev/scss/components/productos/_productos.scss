@@ -121,32 +121,48 @@
                 padding: 0px;
                 display: grid;
                 text-align: center;
-                grid-gap: 1.5em;
+                grid-gap: 1em;
                 padding: 30px 0;
+                grid-template-columns: repeat(2, 1fr);
                 @include desde($mediun) {
                     grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1.5em;
                 }
                 @include desde($x-large) {
                     grid-template-columns: repeat(3, 1fr);
                 }
                 &__items {
-                    padding: 20px;
+                    padding: 5px;
                     border: 1px solid #f6f6f6;
                     text-align: center;
                     border-radius: 0;
                     background-clip: padding-box;
                     transition: all .3s ease;
+                    @include desde($mediun) {
+                      padding: 20px;
+                  }
                     &:hover {
                         box-shadow: 0 0 10px rgba(146, 146, 146, .4);
                         transition: all .3s ease;
                     }
-                    img {}
+                    img {
+                      width: 75%;
+                      @include desde($mediun) {
+                        width: 100%
+                    }
+                    }
+                    a{
                     h1 {
                         font-family: $titulos, sans-serif;
                         color: $negro;
                         margin: 0px 0 15px 0;
                         line-height: 1;
                         text-align: left;
+                        font-size: 1.2em;
+                        @include desde($mediun) {
+                          font-size: 2.5em;
+                      }
+                    }
                     }
                     p {
                         margin: 0px 0;
@@ -157,14 +173,22 @@
                     div {
                         padding: 10px 0 0 0;
                         display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-column-gap: 1em;
+                       
+                        @include desde($mediun) {
+                          grid-template-columns: repeat(2, 1fr);
+                          grid-gap: 1em;
+                      }
                         span {
                             font-family: $titulos, sans-serif;
                             color: $crema;
-                            font-size: 1.5em;
+                            font-size: 1.2em;
                             font-weight: bold;
                             text-align: left;
+                            margin-bottom:10px; 
+                            @include desde($mediun) {
+                              margin-bottom:0px; 
+                              font-size: 1.5em;
+                          }
                         }
                         a {
                             cursor: pointer;
