@@ -102,7 +102,7 @@
     h1 {
         font-family: $titulos, sans-serif;
         font-size: 2em;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
     }
     &__main{
       display: grid;
@@ -143,7 +143,7 @@
                 }
                 .cuerpo {
                     flex: 1 1 auto;
-                    padding: 2em 1.5em 1em 1em;
+                    padding: 1.5em 1.5em 0 0;
                     .cuerpo-title {
                         font-family: $titulos, sans-serif;
                         font-size: 1.5em;
@@ -152,11 +152,19 @@
                         font-family: $textos, sans-serif;
                         font-size: 1em;
                     }
+                    a{
+                      padding: 10px 0;
+                      font-size: 1.2em;
+                      font-family: $titulos,sans-serif;
+                      text-decoration: none;
+                      color:$crema;
+                    }
                     .cuerpo-meta {
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: flex-start;
                         align-items: center;
+                        padding: 15px 0;
                         img {
                             width: 50px;
 

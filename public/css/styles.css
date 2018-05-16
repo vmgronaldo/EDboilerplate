@@ -1405,6 +1405,7 @@ body.mostrar{
   font-family:regular,serif;
   font-size:1.1em;
   line-height:1.5em;
+  text-align:justify;
 }
 
 .filosofia-main{
@@ -1442,12 +1443,14 @@ body.mostrar{
   font-family:regular,serif;
   font-size:1.1em;
   line-height:1.5em;
+  text-align:justify;
 }
 
 .filosofia-main .descripcion .back-photo{
   width:100%;
   background:url(../img/selva-1.jpeg) no-repeat;
   background-size:cover;
+  background-position:50%;
 }
 
 .producto-main{
@@ -1482,20 +1485,34 @@ body.mostrar{
   }
 }
 
-.producto-main__filtros__categorias h1{
+.producto-main__filtros__categorias .categoria{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  border-bottom:2px solid rgba(0,0,0,.1);
+  padding-bottom:15px;
+  margin:0;
+}
+
+.producto-main__filtros__categorias .categoria i{
+  font-size:1.8em;
+  padding-right:5px;
+}
+
+.producto-main__filtros__categorias .categoria .title{
   color:#242424;
   font-family:bold,sans-serif;
   font-weight:700;
-  font-size:2em;
-  padding:0 0 15px 10px;
-  margin:0 0 25px;
-  border-bottom:2px solid rgba(0,0,0,.1);
-  margin-top:0;
+  font-size:1.8em;
+  margin:0;
 }
 
 .producto-main__filtros__categorias ul{
   list-style:none;
-  padding:0;
+  padding:15px 0;
   margin:0;
 }
 
@@ -1509,6 +1526,7 @@ body.mostrar{
 
 .producto-main__filtros__categorias ul li i{
   color:#c0aa83;
+  padding-right:5px;
 }
 
 .producto-main__filtros__categorias ul li a{
@@ -1519,14 +1537,29 @@ body.mostrar{
   text-decoration:none;
 }
 
-.producto-main__filtros__tags h1{
+.producto-main__filtros__tags .tag{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  border-bottom:2px solid rgba(0,0,0,.1);
+  padding-bottom:15px;
+  margin:0;
+}
+
+.producto-main__filtros__tags .tag i{
+  font-size:1.8em;
+  padding-right:5px;
+}
+
+.producto-main__filtros__tags .tag .title{
   color:#242424;
   font-family:bold,sans-serif;
   font-weight:700;
-  font-size:2em;
-  padding:15px 0 10px;
-  margin:0 0 25px;
-  border-bottom:2px solid rgba(0,0,0,.1);
+  font-size:1.8em;
+  margin:0;
 }
 
 .producto-main__filtros__tags div{
@@ -2083,7 +2116,6 @@ body.mostrar{
 .blog-category-1 h1{
   font-family:bold,sans-serif;
   font-size:2em;
-  margin-bottom:30px;
 }
 
 .blog-category-1__main{
@@ -2143,7 +2175,7 @@ body.mostrar{
   -webkit-box-flex:1;
       -ms-flex:1 1 auto;
           flex:1 1 auto;
-  padding:2em 1.5em 1em 1em;
+  padding:1.5em 1.5em 0 0;
 }
 
 .blog-category-1__main__items__item article .cuerpo .cuerpo-title{
@@ -2154,6 +2186,14 @@ body.mostrar{
 .blog-category-1__main__items__item article .cuerpo .cuerpo-text{
   font-family:light,sans-serif;
   font-size:1em;
+}
+
+.blog-category-1__main__items__item article .cuerpo a{
+  padding:10px 0;
+  font-size:1.2em;
+  font-family:bold,sans-serif;
+  text-decoration:none;
+  color:#c0aa83;
 }
 
 .blog-category-1__main__items__item article .cuerpo .cuerpo-meta{
@@ -2168,6 +2208,7 @@ body.mostrar{
   -webkit-box-align:center;
       -ms-flex-align:center;
           align-items:center;
+  padding:15px 0;
 }
 
 .blog-category-1__main__items__item article .cuerpo .cuerpo-meta img{
@@ -3185,12 +3226,12 @@ body.mostrar{
 
 .proyectos-article__item__cuerpo .cuerpo-title{
   font-family:bold,sans-serif;
-  font-size:1.5em;
+  font-size:2em;
 }
 
 .proyectos-article__item__cuerpo .cuerpo-text{
   font-family:light,sans-serif;
-  font-size:1em;
+  font-size:1.2em;
 }
 
 .proyectos-article__item__cuerpo .cuerpo-meta{
@@ -3207,16 +3248,21 @@ body.mostrar{
           align-items:center;
 }
 
-.proyectos-article__item__cuerpo .cuerpo-meta img{
-  width:50px;
-  height:50px;
-  border-radius:50%;
+.proyectos-article__item__cuerpo .cuerpo-meta i{
+  font-size:1.5em;
+  color:#afafaf;
 }
 
 .proyectos-article__item__cuerpo .cuerpo-meta span{
   font-family:bold,sans-serif;
   padding:0 10px;
   color:#afafaf;
+}
+
+.proyectos-article__item__cuerpo a{
+  font-family:bold,sans-serif;
+  font-size:1.5em;
+  color:#c0aa83;
 }
 
 .filtro-main{
@@ -3368,7 +3414,7 @@ body.mostrar{
 }
 
 .page-item.active .page-link{
-  border:none;
+  border:1px solid #dee2e6;
   background:#c0aa83;
 }
 

@@ -373,6 +373,7 @@
         font-family: $textosr, serif;
         font-size: 1.1em;
         line-height: 1.5em;
+        text-align: justify;
       }
     }
   }
@@ -405,14 +406,16 @@
         font-family: $textosr, serif;
         font-size: 1.1em;
         line-height: 1.5em;
+        text-align: justify;
       }
+
     
     }
     .back-photo {
       width: 100%;
       background: url(../img/selva-1.jpeg) no-repeat;
       background-size: cover;
- 
+      background-position: center center;
 
     }
   }

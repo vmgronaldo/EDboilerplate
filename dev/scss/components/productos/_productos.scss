@@ -20,20 +20,28 @@
    
         &__categorias{
 
-          h1{
-            color:$negro;
-            font-family: $titulos,sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            padding: 0px 0px 15px 10px;
-            margin: 0 0px 25px;
+          .categoria{
+            display: flex;
+            align-items: center;
             border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-            margin-top: 0px;
-
-          }
+            padding-bottom: 15px;
+              margin: 0px;
+            i{
+            font-size: 1.8em;
+            padding-right: 5px;
+            } 
+            .title{
+              color:$negro;
+              font-family: $titulos,sans-serif;
+              font-weight: bold;
+              font-size: 1.8em;
+              margin: 0;
+          
+            }} 
+         
           ul{
             list-style: none;
-            padding: 0px;
+            padding: 15px 0;
             margin: 0px;
             li{
               padding: 0px;
@@ -43,6 +51,7 @@
               line-height: 1;
               i{
                 color:$crema;
+                padding-right: 5px;
               }
                 a{
                   color:$negro;
@@ -56,15 +65,26 @@
 
         }
         &__tags{
-          h1{
-            color:$negro;
-            font-family: $titulos,sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            padding: 15px 0px 10px;
-            margin: 0 0px 25px;
+          .tag{
+            display: flex;
+            align-items: center;
             border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 15px;
+            margin: 0px;
+            i{
+            font-size: 1.8em;
+            padding-right: 5px;
+            } 
+            .title{
+              color:$negro;
+              font-family: $titulos,sans-serif;
+              font-weight: bold;
+              font-size: 1.8em;
+              margin: 0;
+              
+              
           }
+        }
           div{     
             display: flex;
             flex-wrap: wrap;
@@ -202,3 +222,5 @@
         }
     }
 }
+
+
