@@ -8,7 +8,7 @@
                 box-shadow: 0px 22px 50px -24px rgba(0, 0, 0, 0.6);
                 .carousel-item {
                     img {
-                        height: 450px;
+                        height: 550px;
                         object-fit: cover;
                         opacity: 0.6;
                     }
@@ -43,7 +43,7 @@
                         width: 100%;
                         position: relative;
                         top: 0;
-                        max-height: 232px;
+                        max-height: 250px;
                         object-fit: cover;
                         border-radius: 5px;
                         box-shadow: 0px 19px 35px -22px rgba(0, 0, 0, 0.5);
@@ -75,11 +75,14 @@
                         align-items: center;
                         img {
                             width: 50px;
-<<<<<<< HEAD
+
                             height: 50px;
-=======
+
+
+                            height: 50px;
+
                             height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
                             border-radius: 50%;
                         }
                         span {
@@ -99,8 +102,16 @@
     h1 {
         font-family: $titulos, sans-serif;
         font-size: 2em;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
     }
+    &__main{
+      display: grid;
+      grid-gap: 2em;
+      @include desde($large) {
+        grid-template-columns: repeat(2, 70% 30%);
+             
+    }
+  
     &__items {
         display: grid;
         @include desde($mediun) {
@@ -116,7 +127,7 @@
                         width: 100%;
                         position: relative;
                         top: 0;
-                        max-height: 232px;
+                        max-height: 300px;
                         object-fit: cover;
                         border-radius: 5px;
                         box-shadow: 0px 19px 35px -22px rgba(0, 0, 0, 0.5);
@@ -132,7 +143,7 @@
                 }
                 .cuerpo {
                     flex: 1 1 auto;
-                    padding: 2em 1.5em 1em 1em;
+                    padding: 1.5em 1.5em 0 0;
                     .cuerpo-title {
                         font-family: $titulos, sans-serif;
                         font-size: 1.5em;
@@ -141,18 +152,25 @@
                         font-family: $textos, sans-serif;
                         font-size: 1em;
                     }
+                    a{
+                      padding: 10px 0;
+                      font-size: 1.2em;
+                      font-family: $titulos,sans-serif;
+                      text-decoration: none;
+                      color:$crema;
+                    }
                     .cuerpo-meta {
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: flex-start;
                         align-items: center;
+                        padding: 15px 0;
                         img {
                             width: 50px;
-<<<<<<< HEAD
+
                             height: 50px;
-=======
-                            height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
+                            height: 50px;
                             border-radius: 50%;
                         }
                         span {
@@ -165,6 +183,10 @@
             }
         }
     }
+    &__filtro{
+          
+    }
+  }
 }
 
 .blog-category-2 {
@@ -222,11 +244,11 @@
                         align-items: center;
                         img {
                             width: 50px;
-<<<<<<< HEAD
+
                             height: 50px;
-=======
-                            height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
+                            height: 50px;
+
                             border-radius: 50%;
                         }
                         span {
@@ -287,11 +309,13 @@
                             align-items: center;
                             img {
                                 width: 50px;
-<<<<<<< HEAD
+
                                 height: 50px;
-=======
+
+                                height: 50px;
+
                                 height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
                                 border-radius: 50%;
                             }
                             span {
@@ -368,11 +392,14 @@
                               align-items: center;
                               img {
                                   width: 50px;
-<<<<<<< HEAD
+
                                   height: 50px;
-=======
+
+                                  height: 50px;
+
                                   height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
+
                                   border-radius: 50%;
                               }
                               span {
@@ -386,6 +413,9 @@
                 }
             }
         }
+
+      
+
         &__row-2 {
           display: grid;
           @include desde($mediun) {
@@ -435,11 +465,13 @@
                             align-items: center;
                             img {
                                 width: 50px;
-<<<<<<< HEAD
+
                                 height: 50px;
-=======
+
+                                height: 50px;
+
                                 height: 60px;
->>>>>>> 3185e0979fd37ced9d710a288fb952619a812556
+
                                 border-radius: 50%;
                             }
                             span {
@@ -454,4 +486,10 @@
           }
       }
     }
+}
+
+
+.invertir{
+  grid-row-start: 1;
+  grid-row-end: 2;
 }

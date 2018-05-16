@@ -17,73 +17,103 @@ block main
     div(class="detallep-main__productos")
       div(class="detallep-main__productos__item")
         div(class="detallep-main__productos__item__imgdet")
-          img(src="img/prod-det.png", alt="")
+          img(src="img/productos/06-warrior-arábica-500g.jpg", alt="")
         div(class="detallep-main__productos__item__infodet")
           
-          h1 American Black Coffee
+          h1 WARRIOR ARÁBICA
+
           h3 S/ 14.00
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, explicabo. Dolorum veniam maiores atque et reiciendis cupiditate optio hic laudantium culpa? Perspiciatis fugiat repudiandae totam aut asperiores dicta, illo aspernatur.       
+          p Presentación de 500 gr en bolsas de papel Graf) Existe un pueblo solidario de Tierras fértiles, cuyas familias Siembran, cosechan y seleccionan los más finos granos con pasión y esmero para producir un cacao de sabor inigualable. Hoy este pueblo, agradecido con la Madre Tierra, comparte su más preciado “tesoro” a todas las personas que esperaban disfrutar de un fascinante cacao orgánico.
           div
             input(type="number" step="1" min="1" max="" name="" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric")
             button(class="button primary") Solicitar
           div
             span Categoria: 
-              a(href="") Cafe
+              a(href="") Cafe         
+            span Tag: 
               a(href="") Cacao
               a(href="") Nutritivo
-            span Tag: 
-              a(href="") Nacional
+              a(href="") Nacional 
      
       div
         div(class="tab")
           button(class="tablinks active"  onclick="tabs(event, 'descripcion')") Descripcion
-          button(class="tablinks" onclick="tabs(event, 'comentario')") Comentario
+          button(class="tablinks" onclick="tabs(event, 'comentario')") Proceso
 
           div(id="descripcion" style="display:block" class="tabcontent")
             br
             h3 Descripcion
-            p Donec pulvinar tellus eget magna aliquet ultricies.Maecenas pulvinar ex a fermentum egestas. Curabitur tristique aliquam felis, a blandit nisl consequat quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porttitor purus elit, sit amet viverra orci pretium non. Sed libero lorem, eleifend at congue quis, semper eget mauris. Nunc ullamcorper cursus libero a luctus. Nunc urna neque, consectetur eget viverra pretium, tempor eu ex. Donec faucibus, dui at consectetur gravida, nisi diam varius metus, sit amet maximus orci eros nec felis. Ut nisi neque, condimentum id magna non, sollicitudin lobortis nibh. Etiam in fermentum felis, non venenatis augue. Donec quis ipsum tortor. Suspendisse tempor turpis vitae velit pharetra, ac varius ipsum pharetra. Ut at metus lobortis, porta tellus at, faucibus odio. Maecenas dictum quam vulputate lacus pharetra, et iaculis erat scelerisque. Nullam nec dui porta, ultricies leo nec, malesuada enim.
-       
+            p ORIGEN ÚNICO : CAC Pangoa – WOMAN VARIEDAD : Blen Arábicas ALTURA : Mayor a 1,300 m.s.n.m.
+            p Presentación de 500 gr en bolsas de papel Graf) Existe un pueblo solidario de Tierras fértiles, cuyas familias Siembran, cosechan y seleccionan los más finos granos con pasión y esmero para producir un cacao de sabor inigualable. Hoy este pueblo, agradecido con la Madre Tierra, comparte su más preciado “tesoro” a todas las personas que esperaban disfrutar de un fascinante cacao orgánico.
           div(id="comentario" class="tabcontent")
             br
-            h3 Comentario
-            p Comentario pulvinar tellus eget magna aliquet ultricies.Maecenas pulvinar ex a fermentum egestas. Curabitur tristique aliquam felis, a blandit nisl consequat quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porttitor purus elit, sit amet viverra orci pretium non. Sed libero lorem, eleifend at congue quis, semper eget mauris. Nunc ullamcorper cursus libero a luctus. Nunc urna neque, consectetur eget viverra pretium, tempor eu ex. Donec faucibus, dui at consectetur gravida, nisi diam varius metus, sit amet maximus orci eros nec felis. Ut nisi neque, condimentum id magna non, sollicitudin lobortis nibh. Etiam in fermentum felis, non venenatis augue. Donec quis ipsum tortor. Suspendisse tempor turpis vitae velit pharetra, ac varius ipsum pharetra. Ut at metus lobortis, porta tellus at, faucibus odio. Maecenas dictum quam vulputate lacus pharetra, et iaculis erat scelerisque. Nullam nec dui porta, ultricies leo nec, malesuada enim.
+            h3 Proceso
+            li Suave Lavado 
+            li Producido
+            li Tostado
+            h3 COOPERATIVA AGRARIA CAFETALERA PANGOA LTDA.
+            ul 
+              li AV. Los cafetaleros N°600, San Martín de Pangoa, Satipo, Perú.
+              li Teléfono: +051 064543017 / +051 064 543013
+              li Registro sanitario: Q0204715N-KFCOAR – RUC 20135240681
+              li Registro sanitario: Q0204715N-KFCOAR – RUC 20135240681
+              li Email: ventas@cacpangoa.com
+              li www.cacpangoa.com.pe
+            ul 
+              li CERTIFICADO ORGANICO POR OCIA  N° 16720
+              li Este producto cumple con el reglamento 
+              li técnico de productos orgánicos:
+              li D.S.N°44-2006-AG
         i
         script
           include ../includes/tabs.js
 
     div(class="producto-main__filtros")
       div(class="producto-main__filtros__categorias")
-        h1 Categorias
+        div(class="categoria") 
+          i(class="fa fa-coffee" aria-hidden="true") 
+          h1(class="title") Categorias
         ul 
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 1
+            i(class="fa fa-chevron-right")          
+            a(href="") Cacao en Grano
+           
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 2
+            i(class="fa fa-chevron-right")       
+            a(href="") Café verde
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 3
+            i(class="fa fa-chevron-right")     
+            a(href="") Manteca de cacao
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 4
+            i(class="fa fa-chevron-right")     
+            a(href="") Polvo de cacao
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 5
+            i(class="fa fa-chevron-right")         
+            a(href="") Café 
           li
-            i(class="icon-play3")        
-            a(href="") Categoria 6
+            i(class="fa fa-chevron-right")         
+            a(href="") Chocolates
+          li
+            i(class="fa fa-chevron-right")         
+            a(href="") Polvo de Cacao
+          li
+            i(class="fa fa-chevron-right")         
+            a(href="") Miel de Abeja
+          li
+            i(class="fa fa-chevron-right")         
+            a(href="") licores
 
       div(class="producto-main__filtros__tags")
-        h1 Tags
+        div(class="tag") 
+          i(class="fa fa-tags" aria-hidden="true") 
+          h1(class="title") Tags
         div 
-          a(href="") Categoria 
-          a(href="") Categoria 
-          a(href="") Categoria 
-          a(href="") Categoria 
-          a(href="") Categoria 
-          a(href="") Categoria 
+          a(href="") Café 
+          a(href="") Chocolate 
+          a(href="") Novedad 
+          a(href="") Exportacion 
+          a(href="") Nacional 
+          a(href="") Miel  
       div(class="producto-main__filtros__cotizador")
         h1 Cotizador          
 

@@ -1,0 +1,304 @@
+.detalle-portada {
+  width: 100%;
+  height: 550px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply, multiply;
+  background-size: cover;
+  background-position: center;
+  .info-main {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    .info {
+      max-width: 730px;
+      margin-bottom: 30px;
+      color: white;
+      .categoria {
+        margin-bottom: 22px;
+        font-family: $titulos, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        a {
+          color: #ffffff;
+          opacity: 0.5;
+          transition: 0.1s;
+          &:hover {
+            opacity: 1;
+            transition: 0.1s;
+          }
+        }
+      }
+      .titulo {
+        margin-top: 6px;
+        margin-bottom: 13px;
+        font-family: $titulos, sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 37px;
+      }
+    }
+  }
+}
+
+.post-detalle {
+  padding: 50px 0;
+  .post-main {
+    display: grid;
+ 
+    @include desde($large) {
+      grid-template-columns: 62.5% 32.5%;
+      grid-gap: 5%;
+     
+    }
+    &__detalle {
+      .detalle-head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .autor {
+          display: flex;
+          img {
+            float: left;
+            margin-right: 20px;
+            width: 57px;
+            height: 57px;
+            border-radius: 50%;
+          }
+          div {
+            p {
+              font-family: $textosr, sans-serif;
+              margin: 0px;
+            }
+            p:nth-child(2) {
+              font-family: $titulos, sans-serif;
+            }
+          }
+        }
+        .redes-sociales {
+          display: flex;
+          a {
+            li {
+              list-style: none;
+              padding: 0 10px;
+              i {
+                font-size: 1.8em;
+                color: #B8B8B8;
+                &:hover {
+                  color: #dcdbdb;
+                  transition: 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+      .detalle-cuerpo {
+        padding: 15px 0;
+        p {
+          margin: 0 auto 25px auto;
+          color: black;
+          font-family: $textosr, sans-serif;
+          font-size: 1.2em;
+          font-weight: 400;
+          line-height: 35px;
+        }
+      }
+      .detalle-tags {
+        padding: 20px 0;
+        a {
+          display: inline-block;
+          margin: 0 13px 15px 0;
+          padding: 7px 17px;
+          color: #6d6d6d;
+          font-family: 'Heebo', 'Arial';
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: uppercase;
+          transition: 0.3s;
+          background: #efeeee;
+          border-radius: 4px;
+          &:hover {
+            background-color: #dcdbdb;
+            text-decoration: none;
+            transition: 0.3s;
+          }
+        }
+      }
+      .detalle-redes-sociales {
+        display: flex;
+        padding-bottom: 20px;
+        a {
+          li {
+            list-style: none;
+            padding: 0 10px;
+            i {
+              font-size: 1.8em;
+              color: #B8B8B8;
+              &:hover {
+                color: #dcdbdb;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+      .detalle-footer {
+  
+        @include desde($large) {
+          display: flex;
+        
+          justify-content: space-between;
+          align-items: center;
+         
+        }
+        img {
+          margin-right: 32px;
+          float: left;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        .perfil {
+          line-height: 30px;
+          h3 {
+            font-family: $titulos, sans-serif;
+          }
+          p {
+            font-family: $textos, sans-serif;
+            font-size: 1em;
+            color: #9d9d9d;
+          }
+        }
+      }
+      .post-relacionados {
+        padding: 50px 0;
+        display: grid;
+        grid-gap: 1em;
+        @include desde($mediun) {
+          grid-template-columns: repeat(2, 1fr);
+               
+        }
+        @include desde($large) {
+          grid-template-columns: repeat(3, 1fr);
+               
+        }
+        div {
+          article {
+            background-color: #000000;
+            border-radius: 8px;
+            position: relative;
+            filter: brightness(70%);
+            &:hover {
+              box-shadow: 0px 8px 11px -6px rgba(0, 0, 0, 0.5);
+              filter: brightness(100%);
+            }
+            a {
+              img {
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+                opacity: 0.5;
+                border-radius: 8px;
+              }
+            }
+            h3 {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 10px;
+              a {
+                color: #f4f4f4;
+              }
+            }
+          }
+          .cuerpo {
+            padding: 20px 0;
+            img {
+              margin-right: 10px;
+              float: left;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+            }
+            span {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    &__filtro {
+      //position: fixed;
+      transition: all 1s;
+      left: 860px;
+      top: 0px;
+      width: 285px;
+      //margin-left: 0px;
+      padding: 0px 15px;
+      //margin-top: 0px;
+      z-index: 99;
+
+      .search {
+        width: 100%;
+        padding-bottom: 20px;
+        input {
+          width: 100%;
+          padding: 15px 0px;
+          border: none;
+          border-bottom: 2px solid #cecece;
+          transition: 0.5s;
+          outline: none;
+          &:focus {
+            outline: none;
+            border-bottom: 2px solid #141414;
+            transition: 0.5s;
+          }
+        }
+      }
+      .post-main-recientes {
+        h1 {
+          font-family: $titulos, sans-serif;
+        }
+        .recientes-main {
+          display:grid;
+          padding: 10px 0;
+          grid-gap: 1em;
+          @include desde($mediun) {
+            grid-template-columns: repeat(2, 1fr);
+                 
+          }
+          @include desde($large) {
+            grid-template-columns: repeat(1, 1fr);
+                 
+          }
+          div {
+            a{
+              color:black;
+              transition: ease-in .25s;
+            img {
+              background: #000;
+              border-radius: 10px;
+              box-shadow: 0 22px 50px -24px rgba(0, 0, 0, .6);
+            }
+            h3 {
+              font-family: $titulos, sans-serif;
+              padding: 15px 0;
+            }
+            &:hover{
+              color:lighten(black, 25);
+              transition: ease-in .25s;
+            }
+          }
+          }
+        }
+      }
+    }
+  }
+}

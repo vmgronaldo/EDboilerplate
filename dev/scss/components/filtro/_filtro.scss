@@ -1,0 +1,91 @@
+.filtro-main {
+  padding:   50px 0;
+  display: -ms-grid;
+  display: grid;
+ 
+  grid-gap: 2em;
+  @include desde($mediun) {
+    grid-template-columns: repeat(2, 1fr);
+         
+  }
+  @include desde($large) {
+    grid-template-columns: repeat(3, 1fr);
+         
+  }
+
+  &__items {
+ 
+    article {
+      transition: all .3s ease;
+      &:hover .photo img {
+        transform: scale(1.1);
+      }
+      .photo {
+        overflow: hidden;
+        display: block;
+        text-align: left;
+        img {
+          border-radius: 0px;
+          background-clip: padding-box;
+          transition: all 0.3s ease-in;
+        }
+      }
+      .description {
+        padding: 40px 0 0;
+        a {
+          text-decoration: none;
+          h1 {
+            font-family: $titulos, sans-serif;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: $crema;
+            transition: all 0.3s ease-in;
+            &:hover  {
+              color: black;
+              transition: all 0.3s ease-in;
+            }
+          }
+          .text {
+       
+              p {
+                font-family: $textosr, sans-serif;
+                font-size: 1.2em;
+         
+                color: black;
+                margin: 0 0 10px;
+              }
+         
+          }
+        }
+      }
+      .foot-filtro {
+        .link{
+          font-size: 1.3em;
+          &:hover  {
+            color: black;
+            transition: all 0.3s ease-in;
+          }
+        }
+  
+        display: block;
+        padding: 15px 20px;
+        margin-top: 35px;
+        background: #F6F6F6;
+        font-family: $titulos,sans-serif;
+        color:$crema;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        .fecha{
+   
+          font-size: 1.1em;
+
+
+  
+        }
+     
+      }
+    }
+  }
+}

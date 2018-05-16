@@ -1,0 +1,128 @@
+extends ../includes/template
+block main
+  section(class="detalle-portada" id="detalle-blog" style="background-image: url('img/selva-5.jpeg')" )
+    div(class="l-container")
+      div(class="info-main")
+        div(class="info")
+          span(class="categoria")
+           a(href="") World
+          h1(class="titulo") Class aptent taciti sociosqu ad litora torquent per conubia
+          span(class="fecha") Julio 28, 2018
+
+  section(class="post-detalle")
+    div(class="post-main l-container")
+        div(class="post-main__detalle")
+          div(class="detalle-head")
+            div(class="autor")
+              img(src="img/users/04-Miguel-Quispe.jpg", alt="")
+              div  
+                p Escritor Por:
+                p Gabriel Viza
+            div(class="redes-sociales")    
+              a(href="")    
+                li
+                  i(class="icon-facebook2")
+              a(href="") 
+                li
+                  i(class="icon-youtube")
+              a(href="") 
+                li
+                  i(class="icon-whatsapp")
+
+          div(class="detalle-cuerpo")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra nisl rutrum, pretium lectus nec, sagittis dolor. Phasellus eleifend efficitur gravida. Maecenas auctor eleifend mi, gravida lacinia arcu vehicula nec. Phasellus vel turpis dui. In ac luctus ex. Nullam a nisl vel sapien malesuada vehicula. Donec ut condimentum ante. Sed non nisi quam. Quisque sodales condimentum velit ut bibendum. Phasellus fermentum rutrum elit ut auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ullamcorper nisl non eros euismod, sit amet lobortis nunc lacinia.
+            p Morbi ac neque sed arcu semper convallis id quis purus. Vivamus pharetra euismod sagittis. Nunc volutpat felis ut lorem lacinia, id euismod nulla cursus. Nulla quis dapibus quam. Ut sodales ut augue nec aliquet. Maecenas rhoncus lectus eget ligula accumsan facilisis. Maecenas sollicitudin massa sit amet lectus condimentum consequat. Praesent semper dui at ipsum tincidunt, ut gravida enim volutpat.
+            p Fusce vitae lacus sed est maximus aliquam in sit amet mauris suspendisse fermentum urna a libero tempus euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit ullamcorper, tortor lacus condimentum mauris. Nulla sed ex aliquet, vestibulum felis a, suscipit lorem. Suspendisse commodo imperdiet risus eu tincidunt praesent tortor mi ullamcorper eu efficitur non, sollicitudin et ex. Sed ultricies cursus condimentum. ut eget fermentum ligula. Sed elementum dictum quam sit amet interdum. Nunc eu ex volutpat, sollicitudin nisi vel, egestas ligula.
+            h1 Aliquam faucibus odio at urna vec
+            p Sagittis tempus est lectus non nunc quisque urna augue molestie at urna ac, tempus varius enim. Suspendisse tempus dolor in ipsum vulputate.. Nam eleifend tellus ac cursus faucibus. Nam ultrices arcu a venenatis euismod, justo lectus pellentesque quam, sed ullamcorper sapien felis congue elit. Suspendisse potenti.
+            p Laoreet et nisl sit amet rutrum ornare enim. Nullam ultricies hendrerit massa ac rutrum neque fringilla eu sed tortor purus tincidunt id commodo vel, convallis id dui suspendisse potenti. Rutrum efficitur augue et varius dui dictum vitae fusce egestas porttitor tristique. Aliquam erat volutpat.
+            p Fusce ultrices lorem a posuere tempus elit velit consequat erat, ac consequat nibh mauris vitae ligula. Phasellus sed suscipit arcu donec sed.
+          
+          div(class="detalle-tags")
+            a(href="") Internacional
+            a(href="") Cafe
+            a(href="") Cacao
+            a(href="") Noticias
+          div(class="detalle-redes-sociales")
+            a(href="")  
+              li
+                i(class="icon-facebook2")
+            a(href="")  
+              li
+                i(class="icon-youtube")
+            a(href="")  
+              li
+                i(class="icon-whatsapp")
+          
+          div(class="detalle-footer")           
+            img(src="img/users/04-Miguel-Quispe.jpg", alt="")
+            div(class="perfil") 
+              h3 Gabriel Viza
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis suscipit atque vel obcaecati, id perspiciatis sed corrupti repellat aut incidunt inventore ullam fugiat, eius sequi laboriosam commodi, pariatur ipsam?
+
+          div(class="post-relacionados") 
+            div
+              article
+                a(href="")
+                  img(src="img/blog/blog-3.jpg", alt="")                
+                h3(class="cuerpo-title")   
+                   a(href="") In ultricies nunc ut mi fin
+              div(class="cuerpo")                
+                    img(src="img/users/04-Miguel-Quispe.jpg", alt="")
+                    span Autor
+                    span Junio 2018     
+            div
+              article
+                a(href="")
+                  img(src="img/blog/blog-3.jpg", alt="")                
+                h3(class="cuerpo-title")   
+                   a(href="") In ultricies nunc ut mi fin
+              div(class="cuerpo")                
+                    img(src="img/users/04-Miguel-Quispe.jpg", alt="")
+                    span Autor
+                    span Junio 2018    
+            div
+              article
+                a(href="")
+                  img(src="img/blog/blog-3.jpg", alt="")                
+                h3(class="cuerpo-title")   
+                   a(href="") In ultricies nunc ut mi fin
+              div(class="cuerpo")                
+                    img(src="img/users/04-Miguel-Quispe.jpg", alt="")
+                    span Autor
+                    span Junio 2018      
+     
+
+       
+        div(class="post-main__filtro " id="filtro")
+          div(class="search")
+            input(type="text" placeholder="Buscar contenido ")
+          div(class="post-main-recientes")
+            h1 Publicaciones Recientes
+            div(class="recientes-main")
+              div
+                a(href="")
+                  img(src="img/blog/blog-5.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
+              div
+                a(href="")
+                  img(src="img/blog/blog-3.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
+              div
+                a(href="")
+                  img(src="img/blog/blog-2.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
+              div
+                a(href="")
+                  img(src="img/blog/blog-1.jpg", alt="")
+                  h3 In ultricies nunc ut mi finibus congue porttitor vec
+            
+
+      
+        
+        
+
+
+
+
+

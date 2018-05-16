@@ -1,8 +1,11 @@
 .producto-main {
     display: grid;
     padding: 100px 0px;
+    $max-width: 1300px;
+    width: 95%;
+    margin: 0 auto;
     @include desde($large) {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: row-reverse;
     }
@@ -17,20 +20,28 @@
    
         &__categorias{
 
-          h1{
-            color:$negro;
-            font-family: $titulos,sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            padding: 0px 0px 15px 10px;
-            margin: 0 0px 25px;
+          .categoria{
+            display: flex;
+            align-items: center;
             border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-            margin-top: 0px;
-
-          }
+            padding-bottom: 15px;
+              margin: 0px;
+            i{
+            font-size: 1.8em;
+            padding-right: 5px;
+            } 
+            .title{
+              color:$negro;
+              font-family: $titulos,sans-serif;
+              font-weight: bold;
+              font-size: 1.8em;
+              margin: 0;
+          
+            }} 
+         
           ul{
             list-style: none;
-            padding: 0px;
+            padding: 15px 0;
             margin: 0px;
             li{
               padding: 0px;
@@ -40,6 +51,7 @@
               line-height: 1;
               i{
                 color:$crema;
+                padding-right: 5px;
               }
                 a{
                   color:$negro;
@@ -53,15 +65,26 @@
 
         }
         &__tags{
-          h1{
-            color:$negro;
-            font-family: $titulos,sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            padding: 15px 0px 10px;
-            margin: 0 0px 25px;
+          .tag{
+            display: flex;
+            align-items: center;
             border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 15px;
+            margin: 0px;
+            i{
+            font-size: 1.8em;
+            padding-right: 5px;
+            } 
+            .title{
+              color:$negro;
+              font-family: $titulos,sans-serif;
+              font-weight: bold;
+              font-size: 1.8em;
+              margin: 0;
+              
+              
           }
+        }
           div{     
             display: flex;
             flex-wrap: wrap;
@@ -121,32 +144,48 @@
                 padding: 0px;
                 display: grid;
                 text-align: center;
-                grid-gap: 1.5em;
+                grid-gap: 1em;
                 padding: 30px 0;
+                grid-template-columns: repeat(2, 1fr);
                 @include desde($mediun) {
                     grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1.5em;
                 }
                 @include desde($x-large) {
                     grid-template-columns: repeat(3, 1fr);
                 }
                 &__items {
-                    padding: 20px;
+                    padding: 15px;
                     border: 1px solid #f6f6f6;
                     text-align: center;
                     border-radius: 0;
                     background-clip: padding-box;
                     transition: all .3s ease;
+                    @include desde($mediun) {
+                      padding: 20px;
+                  }
                     &:hover {
                         box-shadow: 0 0 10px rgba(146, 146, 146, .4);
                         transition: all .3s ease;
                     }
-                    img {}
+                    img {
+                      width: 75%;
+                      @include desde($mediun) {
+                        width: 100%
+                    }
+                    }
+                    a{
                     h1 {
                         font-family: $titulos, sans-serif;
                         color: $negro;
                         margin: 0px 0 15px 0;
                         line-height: 1;
                         text-align: left;
+                        font-size: 1.2em;
+                        @include desde($mediun) {
+                          font-size: 1.3em;
+                      }
+                    }
                     }
                     p {
                         margin: 0px 0;
@@ -157,14 +196,22 @@
                     div {
                         padding: 10px 0 0 0;
                         display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-column-gap: 1em;
+                       
+                        @include desde($mediun) {
+                          grid-template-columns: repeat(2, 1fr);
+                          grid-gap: 1em;
+                      }
                         span {
                             font-family: $titulos, sans-serif;
                             color: $crema;
-                            font-size: 1.5em;
+                            font-size: 1.2em;
                             font-weight: bold;
                             text-align: left;
+                            margin-bottom:10px; 
+                            @include desde($mediun) {
+                              margin-bottom:0px; 
+                              font-size: 1.5em;
+                          }
                         }
                         a {
                             cursor: pointer;
@@ -175,3 +222,5 @@
         }
     }
 }
+
+

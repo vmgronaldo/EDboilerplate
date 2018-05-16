@@ -1,0 +1,77 @@
+.proyectos-article {
+  padding: 50px 0;
+  h1 {
+      font-family: $titulos, sans-serif;
+      font-size: 2em;
+      margin-bottom: 30px;
+  }
+  &__item {
+      display: grid;
+      grid-gap: 2em;
+      padding: 1.5em 0;
+      @include desde($mediun) {
+          grid-template-columns: repeat(2, 1fr);
+       
+      }
+      &__img {
+       
+              a {
+                  font-weight: 500;
+                  transition: 0.2s;
+                  img {
+                      width: 100%;
+                      position: relative;
+                      top: 0;
+                      max-height: 500px;
+                      object-fit: cover;
+                      border-radius: 5px;
+                      box-shadow: 0px 19px 35px -22px rgba(0, 0, 0, 0.5);
+                      filter: brightness(90%);
+                      transition: 0.3s;
+                      &:hover {
+                          top: 5px;
+                          box-shadow: 0px 8px 11px -6px rgba(0, 0, 0, 0.5);
+                          filter: brightness(80%);
+                          transition: 0.3s;
+                      }
+                  }
+              }
+            }
+            &__cuerpo{
+              
+              align-content: center;
+              display: grid;
+                  .cuerpo-title {
+                      font-family: $titulos, sans-serif;
+                      font-size: 2em;
+                  }
+                  .cuerpo-text {
+                      font-family: $textos, sans-serif;
+                      font-size: 1.2em;
+                  }
+                  .cuerpo-meta {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: flex-start;
+                      align-items: center;
+                      i {
+                        
+                        font-size: 1.5em;
+                        color: #afafaf;
+                      }
+                      span {
+                          font-family: $titulos, sans-serif;
+                          padding: 0 10px;
+                          color: #afafaf;
+                      }
+                  }
+                  a{
+                    font-family: $titulos, sans-serif;
+                    font-size: 1.5em;
+                    color:$crema;
+                  }
+              
+          
+            }
+  }
+}

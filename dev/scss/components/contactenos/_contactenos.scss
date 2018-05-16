@@ -1,0 +1,180 @@
+.headabout-contacto {
+    background: url(../img/slider-01.jpg) no-repeat;
+   width: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0;
+    min-height: 200px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include desde($large) {
+        min-height: 400px;
+        padding: 50px 0;
+        text-align: left;
+    }
+    &__main {
+        h1 {
+            margin: 0;
+            color: $white;
+            font-family: $titulos, sans-serif;
+            font-size: 2.5em;
+            @include desde($large) {
+                font-size: 3em;
+            }
+        }
+        ul {
+            list-style: none;
+            margin: 10px 0 5px 0;
+            padding: 0;
+            display: block;
+            li {
+                display: inline-block;
+                margin: 0;
+                font-size: 1em;
+                font-weight: bold;
+                padding-right: 5px;
+                a {
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.border-cafe {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  height: 50px;
+  background: url(../img/border.png)no-repeat;
+  background-size: cover;
+}
+
+.contactanos {
+    &__main {
+        display: grid;
+        grid-gap: 2%;
+        padding: 80px 0;
+        @include desde($mediun) {
+            grid-template-columns: 49% 49%;
+        }
+        &__info {
+            padding: 40px 20px;
+            h1 {
+                padding: 0px;
+                margin: 0px;
+                font-size: 2em;
+                font-family: $titulos, sans-serif;
+            }
+            p {
+                padding: 0px;
+                margin: 0px;
+                padding: 20px 0;
+                font-family: $textosr, sans-serif;
+            }
+            ul {
+                list-style: none;
+                padding: 40px 0;
+                margin: 0;
+                li {
+                    font-size: 1.1em;
+                    font-family: $textosr, sans-serif;
+                    padding: 10px 0;
+                    width: 60%;
+                    i {
+                        font-size: 1.3em;
+                        font-family: $titulos, sans-serif;
+                        padding-right: 5px;
+                    }
+                    span {}
+                }
+            }
+        }
+        &__portada {
+            background: url(../img/contact-bg.png) no-repeat;
+            width: 100%;
+            .cuerpo {
+                div {
+                    margin: 30px;
+                    border: 8px solid #fff;
+                    padding: 40px 20px;
+                    color: $white;
+                    h1 {
+                        font-size: 2em;
+                        text-align: center;
+                        font-family: $titulos, sans-serif;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 20px 0;
+                        margin: 0;
+                        li {
+                            font-size: 1.2em;
+                            font-family: $textos, sans-serif;
+                            padding: 5px 0;
+                            strong {}
+                        }
+                    }
+                }
+            }
+        }
+        &__form {
+            //background: $white;
+            padding: 40px 0px;
+            form {
+                display: grid;
+                label {
+                    font-size: 1.2em;
+                    font-family: $titulos, sans-serif;
+                }
+                input,
+                textarea {
+                    background: $white;
+                    padding: 10px 20px;
+                    border: 0;
+                    outline: 0;
+                    font-family: $textosr, sans-serif;
+                }
+                textarea {
+                    height: 200px;
+                    margin-bottom: 20px;
+                }
+                button {
+                  width: 100%;
+                 
+                  @include desde($mediun) {
+                    width: 50%;
+                }
+                @include desde($large) {
+                  width: 40%;
+              }
+
+                }
+            }
+        }
+    }
+}
+
+.planificar {
+    &__main {
+        h1 {
+            font-size: 1.5em;
+            font-family: $titulos, sans-serif;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-family: $titulos, sans-serif;
+        }
+        p {
+            font-family: $textosr, sans-serif;
+        }
+        strong {
+            font-family: $titulos, sans-serif;
+        }
+    }
+}
