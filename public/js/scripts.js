@@ -6,7 +6,7 @@ var _example = require("./modules/example");
 (0, _example.saludo)();
 (0, _example.despedida)();
 (0, _example.toggle)();
-(0, _example.fixed)();
+//fixed();
 
 },{"./modules/example":2}],2:[function(require,module,exports){
 'use strict';
