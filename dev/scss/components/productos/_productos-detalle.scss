@@ -1,7 +1,7 @@
 .detallep-main {
     display: grid;
     padding: 100px 0px;
-    background: url(../img/about-index-img.png) no-repeat;
+    //background: url(../img/about-index-img.png) no-repeat;
     background-size: 60%;
     background-position: 5% 10%;
     @include desde($large) {
@@ -23,7 +23,7 @@
             &__imgdet {
               text-align: center;
               img{
-                width: 50%;
+                //width: 50%;
               }
          
           }
