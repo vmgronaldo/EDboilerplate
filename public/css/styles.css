@@ -137,9 +137,15 @@ img,video{
 }
 
 .main-header{
-  background:#f4f4f4;
+  background:#fff;
   padding:20px 0;
   border-bottom:5px solid #c0aa83b8;
+}
+
+@media screen and (min-width:1024px){
+  .main-header{
+    padding:5px 0;
+  }
 }
 
 .main-header .l-container{
@@ -343,7 +349,7 @@ body.mostrar{
     display:grid;
     -ms-grid-columns:(1fr)[2];
         grid-template-columns:repeat(2,1fr);
-    grid-gap:2em;
+    grid-gap:1em;
     text-align:left;
   }
 }
@@ -378,6 +384,73 @@ body.mostrar{
   color:#242424;
   font-size:1em;
   margin:0;
+}
+
+.historiaindex-main{
+  background:#44200e;
+  margin:100px 0 0;
+  padding:100px 0;
+  color:#c0aa83;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main{
+    background:url(../img/quienes-somos.png) no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:50%;
+    overflow:hidden;
+  }
+}
+
+.historiaindex-main .historiaindex{
+  color:#fff;
+}
+
+.historiaindex-main .historiaindex h1{
+  color:#fff;
+  text-align:center;
+  font-family:bold,sans-serif;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main .historiaindex h1{
+    font-size:2.5em;
+  }
+}
+
+.historiaindex-main .historiaindex p{
+  width:100%;
+  margin:20px auto;
+  text-align:justify;
+  font-family:regular,sans-serif;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main .historiaindex p{
+    width:70%;
+  }
+}
+
+.historiaindex-main .historiaindex-button{
+  text-align:center;
+}
+
+.historiaindex-main .historiaindex-button a{
+  line-height:1.9em;
+  padding:10px 40px;
+  transition:all .25s;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.historiaindex-main .historiaindex-button a i{
+  font-size:1.5em;
+  padding-left:5px;
+  position:relative;
+  top:4px;
 }
 
 .productos-main__blocktitle{
@@ -431,30 +504,21 @@ body.mostrar{
   font-family:bold,sans-serif;
   color:#44200e;
   font-weight:700;
-  font-size:3em;
-  margin:0;
+  margin:30px 0 0;
 }
 
 @media screen and (min-width:768px){
   .productos-main__blocktitle__title h1{
     position:relative;
-    top:40px;
+    top:60px;
+    margin:0;
   }
 }
 
 @media screen and (min-width:1024px){
   .productos-main__blocktitle__title h1{
-    font-size:4em;
-    top:50px;
-  }
-}
-
-@media screen and (min-width:1024px){
-  .productos-main__blockproducts{
-    display:-ms-grid;
-    display:grid;
-    -ms-grid-columns:1fr 1fr;
-        grid-template-columns:1fr 1fr;
+    font-size:2em;
+    top:70px;
   }
 }
 
@@ -479,8 +543,9 @@ body.mostrar{
   .productos-main__blockproducts__item__items{
     display:-ms-grid;
     display:grid;
-    -ms-grid-columns:1fr 1fr;
-        grid-template-columns:1fr 1fr;
+    -ms-grid-columns:(1fr)[5];
+        grid-template-columns:repeat(5,1fr);
+    grid-gap:1em;
     padding:0 0 40px;
   }
 }
@@ -490,13 +555,23 @@ body.mostrar{
   font-family:bold,sans-serif;
 }
 
-.productos-main__blockproducts__item__items div h3{
+.productos-main__blockproducts__item__items div a{
+  color:#d5d5d5;
+  transition:.25s ease-in;
+}
+
+.productos-main__blockproducts__item__items div a:hover{
+  transition:.25s ease-in;
+  color:#333;
+}
+
+.productos-main__blockproducts__item__items div a h3{
   color:#44200e;
   font-weight:500;
   font-size:1.2em;
 }
 
-.productos-main__blockproducts__item__items div p{
+.productos-main__blockproducts__item__items div a p{
   font-weight:600;
   font-size:1em;
 }
@@ -504,14 +579,22 @@ body.mostrar{
 .productos-main__button{
   width:100%;
   text-align:center;
+  margin:20px 0;
 }
 
 .productos-main__button a{
   cursor:pointer;
 }
 
+.productos-main__button a i{
+  font-size:1.5em;
+  padding-left:5px;
+  position:relative;
+  top:4px;
+}
+
 .puntosventas-main{
-  padding:100px 0;
+  padding:50px 0;
 }
 
 @media screen and (min-width:1024px){
@@ -520,6 +603,7 @@ body.mostrar{
     display:grid;
     -ms-grid-columns:1fr 1fr;
         grid-template-columns:1fr 1fr;
+    grid-gap:1em;
   }
 }
 
@@ -538,9 +622,13 @@ body.mostrar{
   }
 }
 
-.puntosventas-main__items__item img{
-  position:relative;
-  top:50px;
+.puntosventas-main__items__item .detalle{
+  font-family:regular,sans-serif;
+  margin:0 0 20px;
+}
+
+.puntosventas-main__items__item .detalle ul{
+  margin:0;
 }
 
 .puntosventas-main__items__item p{
@@ -577,15 +665,14 @@ body.mostrar{
 }
 
 .puntosventas-main__items__item__paises div{
-  font-family:bold,sans-serif;
+  font-family:regular,sans-serif;
   color:#242424;
-  font-size:1.2em;
-  font-weight:700;
   margin:10px 0;
 }
 
 .puntosventas-main__items__item__paises div li{
   list-style:none;
+  padding:10px;
 }
 
 .puntosventas-main__items__item__paises div li i{
@@ -742,8 +829,8 @@ body.mostrar{
 
 @media screen and (min-width:1024px){
   .testimonios-main__content__socios{
-    -ms-grid-columns:(1fr)[6];
-        grid-template-columns:repeat(6,1fr);
+    -ms-grid-columns:(1fr)[5];
+        grid-template-columns:repeat(5,1fr);
     padding:50px 0;
   }
 }
@@ -1063,7 +1150,7 @@ body.mostrar{
   z-index:1;
   text-align:center;
   height:50px;
-  background:url(../img/border.png) no-repeat;
+  background:url(../img/franja-blanca.png) no-repeat;
   background-size:cover;
 }
 
@@ -1449,7 +1536,7 @@ body.mostrar{
 
 .filosofia-main .descripcion .back-photo{
   width:100%;
-  background:url(../img/selva-1.jpeg) no-repeat;
+  background:url(../img/productos/00-cafe-verde-de-exportacion.png) no-repeat;
   background-size:cover;
   background-position:50%;
 }
@@ -1934,15 +2021,15 @@ body.mostrar{
   z-index:1;
   text-align:center;
   height:50px;
-  background:url(../img/border.png) no-repeat;
+  background:url(../img/franja-blanca.png) no-repeat;
   background-size:cover;
 }
 
 .slider-index-main__enlaces{
   display:-ms-grid;
   display:grid;
-  grid-gap:3em;
-  padding:50px 0 0;
+  grid-gap:2em;
+  padding:20px 0 0;
 }
 
 @media screen and (min-width:768px){
@@ -1977,7 +2064,13 @@ body.mostrar{
   background:#44200e;
   color:#f4f4f4;
   text-decoration:none;
+  font-size:1em;
   margin:0 0 10px;
+}
+
+.slider-index-main__enlaces div a i{
+  padding-left:5px;
+  font-size:1.5em;
 }
 
 .slider-index-main__enlaces div p{

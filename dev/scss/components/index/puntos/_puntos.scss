@@ -1,9 +1,10 @@
 .puntosventas-main{
-padding: 100px 0;
+padding: 50px 0;
   &__items{
     @include desde($large) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
   }
     &__item{
       h2{
@@ -19,8 +20,17 @@ padding: 100px 0;
        
       }
       img{
-        position: relative;
-        top:50px;
+       /*  position: relative;
+        top:50px; */
+
+      }
+      .detalle{
+        font-family: $textosr, sans-serif;
+        margin: 0 0 20px 0;
+        ul{
+          
+          margin: 0;
+        }
       }
       p{
         font-family: $textos, sans-serif;
@@ -49,14 +59,13 @@ padding: 100px 0;
 
      
       div{
-        font-family: $titulos, sans-serif;
+        font-family: $textosr, sans-serif;
         color: $negro;
-        font-size:1.2em;
-        font-weight: bold;
         margin: 10px 0px;
        
         li{
           list-style: none;
+          padding: 10px;
           i {
             color:$crema;
             padding-right: 5px;
@@ -69,3 +78,5 @@ padding: 100px 0;
     }
   }
 }
+
+

@@ -6,7 +6,7 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             @include desde($large) {
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 padding: 50px 0px;
             }
             div {
