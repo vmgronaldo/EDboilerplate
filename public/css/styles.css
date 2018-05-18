@@ -26,22 +26,22 @@ img,video{
 
 @font-face{
   font-family:bold;
-  src:url(../fuentes/Kanit/Kanit-Bold.ttf) format("truetype");
+  src:url(../fuentes/Kanit/EncodeSans-Bold.ttf) format("truetype");
 }
 
 @font-face{
   font-family:light;
-  src:url(../fuentes/Kanit/Kanit-Light.ttf) format("truetype");
+  src:url(../fuentes/Kanit/EncodeSans-Light.ttf) format("truetype");
 }
 
 @font-face{
   font-family:mediun;
-  src:url(../fuentes/Kanit/Kanit-Medium.ttf) format("truetype");
+  src:url(../fuentes/Kanit/EncodeSans-Medium.ttf) format("truetype");
 }
 
 @font-face{
   font-family:regular;
-  src:url(../fuentes/Kanit/Kanit-Regular.ttf) format("truetype");
+  src:url(../fuentes/Kanit/EncodeSans-Regular.ttf) format("truetype");
 }
 
 @font-face{
@@ -142,6 +142,12 @@ img,video{
   border-bottom:5px solid #c0aa83b8;
 }
 
+@media screen and (min-width:1024px){
+  .main-header{
+    padding:5px 0;
+  }
+}
+
 .main-header .l-container{
   display:-webkit-box;
   display:-ms-flexbox;
@@ -222,8 +228,7 @@ img,video{
   line-height:2;
   display:block;
   text-transform:capitalize;
-  font-family:bold;
-  font-weight:700;
+  font-family:bold,sans-serif;
   padding:0 10px;
   transition:.25s ease-in-out;
 }
@@ -343,7 +348,7 @@ body.mostrar{
     display:grid;
     -ms-grid-columns:(1fr)[2];
         grid-template-columns:repeat(2,1fr);
-    grid-gap:2em;
+    grid-gap:1em;
     text-align:left;
   }
 }
@@ -378,6 +383,73 @@ body.mostrar{
   color:#242424;
   font-size:1em;
   margin:0;
+}
+
+.historiaindex-main{
+  background:#44200e;
+  margin:100px 0 0;
+  padding:100px 0;
+  color:#c0aa83;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main{
+    background:url(../img/quienes-somos.png) no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:50%;
+    overflow:hidden;
+  }
+}
+
+.historiaindex-main .historiaindex{
+  color:#fff;
+}
+
+.historiaindex-main .historiaindex h1{
+  color:#fff;
+  text-align:center;
+  font-family:bold,sans-serif;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main .historiaindex h1{
+    font-size:2.5em;
+  }
+}
+
+.historiaindex-main .historiaindex p{
+  width:100%;
+  margin:20px auto;
+  text-align:justify;
+  font-family:regular,sans-serif;
+}
+
+@media screen and (min-width:768px){
+  .historiaindex-main .historiaindex p{
+    width:70%;
+  }
+}
+
+.historiaindex-main .historiaindex-button{
+  text-align:center;
+}
+
+.historiaindex-main .historiaindex-button a{
+  line-height:1.9em;
+  padding:10px 40px;
+  transition:all .25s;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.historiaindex-main .historiaindex-button a i{
+  font-size:1.5em;
+  padding-left:5px;
+  position:relative;
+  top:4px;
 }
 
 .productos-main__blocktitle{
@@ -431,14 +503,14 @@ body.mostrar{
   font-family:bold,sans-serif;
   color:#44200e;
   font-weight:700;
-  font-size:1em;
-  margin:0;
+  margin:30px 0 0;
 }
 
 @media screen and (min-width:768px){
   .productos-main__blocktitle__title h1{
     position:relative;
-    top:40px;
+    top:60px;
+    margin:0;
   }
 }
 
@@ -508,19 +580,15 @@ body.mostrar{
   text-align:center;
 }
 
-.productos-main__button a{
-  cursor:pointer;
-}
-
 .productos-main__button a i{
   font-size:1.5em;
   padding-left:5px;
   position:relative;
-  top:2px;
+  top:4px;
 }
 
 .puntosventas-main{
-  padding:100px 0;
+  padding:50px 0;
 }
 
 @media screen and (min-width:1024px){
@@ -529,6 +597,7 @@ body.mostrar{
     display:grid;
     -ms-grid-columns:1fr 1fr;
         grid-template-columns:1fr 1fr;
+    grid-gap:1em;
   }
 }
 
@@ -547,9 +616,13 @@ body.mostrar{
   }
 }
 
-.puntosventas-main__items__item img{
-  position:relative;
-  top:50px;
+.puntosventas-main__items__item .detalle{
+  font-family:regular,sans-serif;
+  margin:0 0 20px;
+}
+
+.puntosventas-main__items__item .detalle ul{
+  margin:0;
 }
 
 .puntosventas-main__items__item p{
@@ -586,15 +659,14 @@ body.mostrar{
 }
 
 .puntosventas-main__items__item__paises div{
-  font-family:bold,sans-serif;
+  font-family:regular,sans-serif;
   color:#242424;
-  font-size:1.2em;
-  font-weight:700;
   margin:10px 0;
 }
 
 .puntosventas-main__items__item__paises div li{
   list-style:none;
+  padding:10px;
 }
 
 .puntosventas-main__items__item__paises div li i{
@@ -751,8 +823,8 @@ body.mostrar{
 
 @media screen and (min-width:1024px){
   .testimonios-main__content__socios{
-    -ms-grid-columns:(1fr)[6];
-        grid-template-columns:repeat(6,1fr);
+    -ms-grid-columns:(1fr)[5];
+        grid-template-columns:repeat(5,1fr);
     padding:50px 0;
   }
 }
@@ -1072,7 +1144,7 @@ body.mostrar{
   z-index:1;
   text-align:center;
   height:50px;
-  background:url(../img/border.png) no-repeat;
+  background:url(../img/franja-blanca.png) no-repeat;
   background-size:cover;
 }
 
@@ -1458,7 +1530,7 @@ body.mostrar{
 
 .filosofia-main .descripcion .back-photo{
   width:100%;
-  background:url(../img/selva-1.jpeg) no-repeat;
+  background:url(../img/productos/00-cafe-verde-de-exportacion.png) no-repeat;
   background-size:cover;
   background-position:50%;
 }
@@ -1943,14 +2015,14 @@ body.mostrar{
   z-index:1;
   text-align:center;
   height:50px;
-  background:url(../img/border.png) no-repeat;
+  background:url(../img/franja-blanca.png) no-repeat;
   background-size:cover;
 }
 
 .slider-index-main__enlaces{
   display:-ms-grid;
   display:grid;
-  grid-gap:3em;
+  grid-gap:2em;
   padding:20px 0 0;
 }
 
@@ -1986,6 +2058,7 @@ body.mostrar{
   background:#44200e;
   color:#f4f4f4;
   text-decoration:none;
+  font-size:1em;
   margin:0 0 10px;
 }
 

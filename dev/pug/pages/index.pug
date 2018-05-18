@@ -33,16 +33,16 @@ block main
             span(class="sr-only") Next   
         div(class="border-slider")     
       div(class="slider-index-main__enlaces l-container")
-        div
+        div(class="animated slideInLeft")
           h1 +2,000
           p Familias, socios de la cooperativa desde el año 1977, incluyendo los dos grupos étnicos (Nomatsiguengas y Asháninkas). 
-        div
+        div(class="animated zoomIn")
           div
-            a(href="" class="button primary") Chatea con Nosotros
+            a(href="" class="button primary") Chatea
               <i class="fa fa-whatsapp" aria-hidden="true"></i>
           p Recibe más información sobre nuestros productos directamente a tu Whatsapp y disfruta al máximo... 
           //a(href="") Contactanos...
-        div
+        div(class="animated slideInRight")
           h1 +1,000 00
           p De árboles reforestados con diversos proyectos, beneficiando a los socios de la Cooperativa.
     section(class="productos-main l-container")
@@ -90,6 +90,19 @@ block main
       div(class="productos-main__button")
         a(class="button primary") Mas productos
           <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+   
+    
+    section(class="historiaindex-main")
+      div(class="historiaindex animated slideInRight l-container")
+        h1 ¿Quienes Somos?
+        p La Cooperativa Agraria Cafetalera Pangoa fue fundada el 02 de octubre de 1977 por iniciativa de 50 socios productores de café, con el objetivo de mejorar el precio de sus productos; desde entonces cumple una ardua labor cooperativista y solidaria frente a la necesidad colectiva de sus miembros y la comunidad en general.  
+        p Su principal actividad es el acopio y comercialización del café y cacao con certificado orgánico, convencional y Comercio Justo de sus asociados; desde el año 2002 incursionamos en la producción de miel de abeja, cumpliendo estrictos cuidados que garantizan la calidad del producto y excelente calidad de servicio al cliente.  
+        p En la actualidad la cooperativa cuenta con 680 socios agricultores, es una organización sólida con reconocimiento nacional e internacional, gracias al esfuerzo continuo de sus asociados y a la eficiente labor que desempeña el equipo de profesionales, técnicos y administrativos.
+      div(class="historiaindex-button")
+        a(class="button") Sobre Nosotros
+          <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>      
+
+    
     section(class="nosotros-main l-container")
       //div(class="nosotros-main__info")
         h3 Cooperativa Agraria
@@ -97,21 +110,22 @@ block main
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio aliquam delectus, enim reiciendis dolorem ullam error unde, corrupti fugit dignissimos est laborum. Vel ullam illum, at harum est aperiam.
         span Pangoa, Descubre nuestra historia...
       
-      div(class="nosotros-main__service")
+      //div(class="nosotros-main__service")
         div(class="nosotros-main__service__items")
           div(class="nosotros-main__service__items__item")
             img(src="img/icon/icon-1.png", alt="")
             h2 Cosecha
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum?
           div(class="nosotros-main__service__items__item")
-            img(src="img/icon/icon-2.png", alt="")
-            h2 Venta
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum? 
-         
-          div(class="nosotros-main__service__items__item")
             img(src="img/icon/icon-3.png", alt="")
             h2 Producción
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum?
+
+          div(class="nosotros-main__service__items__item")
+            img(src="img/icon/icon-2.png", alt="")
+            h2 Venta
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae id magnam aliquid quidem! Minima cum culpa, aliquam sequi delectus repellat optio facilis vero eos tempora pariatur autem commodi voluptatum? 
+           
           div(class="nosotros-main__service__items__item")
             img(src="img/icon/icon-4.png", alt="")
             h2 Exportación
@@ -119,48 +133,7 @@ block main
     
     
         
-    section(class="puntosventas-main l-container")
-      div(class="puntosventas-main__items")
-        div(class="puntosventas-main__items__item")
-          h2 Puntos de venta y entrega
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
-          h3 Paises consumidores
-          div(class="puntosventas-main__items__item__paises")
-            div
-              li
-               i(class="fa fa-chevron-right") 
-               spam Canada
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Usa
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Mexico
-            div
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Brazil
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Aregentina
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Europa
-            div
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Rusia
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Asia
-              li 
-               i(class="fa fa-chevron-right") 
-               spam Australia
-         
-          a(class="button primary") Ver lista
-
-        div(class="puntosventas-main__items__item")
-          img(src="img/map.png", alt="")
+    include ../includes/puntos-ventas.pug 
         
     section(class="clientes-main ")
       div(class="clientes-main__distribuidor l-container")
@@ -172,7 +145,7 @@ block main
           h3 Conviertase en nuestro distribuidor
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero recusandae quidem exercitationem optio repellendus reprehenderit deserunt perferendis? Saepe ratione nisi distinctio officiis expedita quo eligendi quae aliquid, mollitia dolore!
           a(class="button primary") Contactanos
-      div(class="clientes-main__numeros")
+      //div(class="clientes-main__numeros")
         div(class="clientes-main__numeros__main l-container")
           div
             h1 +9,668
@@ -188,18 +161,15 @@ block main
       div(class="testimonios-main__content l-container")
         div(class="testimonios-main__content__socios")
           div
-            img(src="img/socio-1.png", alt="")
-          div
-            img(src="img/socio-2.png", alt="")
-          div
             img(src="img/socio-3.png", alt="")
           div
             img(src="img/socio-4.png", alt="")
           div
             img(src="img/socio-5.png", alt="")
           div
-            img(src="img/socio-5.png", alt="")
-
+            img(src="img/socio-2.png", alt="")
+          div
+            img(src="img/socio-1.png", alt="")      
         div(class="testimonios-main__content__testigos")
           div(class="testimonios-main__content__testigos__datos")
             div
